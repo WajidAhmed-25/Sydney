@@ -1,0 +1,37 @@
+.app-download {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    direction: rtl;
+    background-color: #070a37;
+    /* top: 1rem; */
+    position: fixed;
+    flex-direction: column;
+    z-index: 1000;
+   margin-top:83.7px;
+    left: 83.1rem;
+    /* left: 84.5rem; */
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    box-shadow: 1px 2px 14px 5px #00000070;
+    padding: 1rem;
+    &:focus {
+      outline: none;
+    }
+    label{
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+      color: #fff;
+      cursor: pointer;
+      &#first-title {
+        font-size: 1.3rem;
+      }  
+      &#second-title{
+        font-size:.9rem;
+      }
+    }
+    
+
+}
+
+
