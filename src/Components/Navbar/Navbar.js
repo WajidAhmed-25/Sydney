@@ -316,7 +316,7 @@ export default function MyNavbar() {
         </li>
       </ul>
     </div>
-    <div className="mt-auto">
+    <div className="mt-auto ">
       <div className="flex justify-between pt-6">
         {/* Optional Sign In/Sign Up Buttons */}
       </div>
