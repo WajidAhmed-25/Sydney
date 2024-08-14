@@ -4,6 +4,9 @@ import WhatsappChatButton from '../Whatsapp_Chat_Button/Whatsapp_Chat_Button';
 import logo_data from  './Scary-removebg-preview.png';
 import { useNavigate } from 'react-router-dom';
 import my_logo from './scare.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+
 
 
 export default function MyNavbar() {
@@ -83,20 +86,35 @@ export default function MyNavbar() {
 						</button>
 					</div>
 					<ul className="absolute hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
-						<li><button onClick={() => handleNavigation('/')} className="text-md font-semibold hover:text-lg text-[#0b1056] hover:text-gray-500">Home</button></li>
+						{/* <li><button onClick={() => handleNavigation('/')} className="text-md font-semibold hover:text-lg text-[#0b1056] hover:text-blue-900">Home</button></li> */}
+					
+						<li>
+  <button
+    onClick={() => handleNavigation('/')}
+    className="relative text-md font-semibold text-[#0b1056] hover:text-[#0b1056] transition-all duration-300 hover:text-lg
+    before:content-[''] before:absolute before:left-0 before:-bottom-1 before:w-0 before:h-[2px] before:bg-current before:transition-all before:duration-300 hover:before:w-full"
+  >
+    Home
+  </button>
+</li>
+
+					
+					
 						<li className="text-gray-300">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
 								<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 							</svg>
 						</li>
-						<li><button onClick={() => handleNavigation('/AboutUs')} className="text-md font-semibold hover:text-xl text-[#0b1056] hover:text-gray-500">About Us</button></li>
+						<li><button onClick={() => handleNavigation('/AboutUs')}     className="relative text-md font-semibold text-[#0b1056] hover:text-[#0b1056] transition-all duration-300 hover:text-lg
+    before:content-[''] before:absolute before:left-0 before:-bottom-1 before:w-0 before:h-[2px] before:bg-current before:transition-all before:duration-300 hover:before:w-full">About Us</button></li>
 						<li className="text-gray-300">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
 								<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 							</svg>
 						</li>
-						<li className="relative" onMouseEnter={handleMouseEnter}>
-							<button className="flex text-md font-semibold text-[#0b1056] hover:text-gray-500 hover:text-lg" onClick={toggleDropdown}>
+						{/* <li className="relative" onMouseEnter={handleMouseEnter}>
+							<button     className="relative text-md font-semibold text-[#0b1056] hover:text-[#0b1056] transition-all duration-300 hover:text-lg
+    before:content-[''] before:absolute before:left-0 before:-bottom-1 before:w-0 before:h-[2px] before:bg-current before:transition-all before:duration-300 hover:before:w-full" onClick={toggleDropdown}>
 								Services
 								<img src={dropDown} className='mt-1.5 ml-2.5 ' height={'15px'} width={'15px'} alt='img'></img>
 							</button>
@@ -116,25 +134,74 @@ export default function MyNavbar() {
 </ul>
 
 							)}
-						</li>
+						</li> */}
+
+
+
+
+
+<li className="relative" onMouseEnter={handleMouseEnter}>
+  <button
+    className="relative text-md font-semibold text-[#0b1056] transition-all duration-300 hover:text-lg hover:text-[#0b1056] group"
+    onClick={toggleDropdown}
+  >
+    <span className="flex items-center">
+      Services
+	  <FontAwesomeIcon icon={faChevronDown} className='ml-4' />
+    </span>
+    <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-current transition-all duration-300 group-hover:w-full"></span>
+  </button>
+  {isDropdownOpen && (
+    <ul
+      className="absolute mt-6 -ml-16 text-center transition duration-200 ease-in-out transform bg-white border-[#0b10567e] border-2 rounded-lg shadow-xl w-72 -left-6 hover:scale-105 hover:shadow-2xl"
+      onMouseLeave={handleMouseLeave}
+    >
+      <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-[#0b1056] hover:bg-gray-100 hover:scale-105">Assist Access/Maintain Employ</button></li>
+  <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-[#0b1056] hover:bg-gray-100 hover:scale-105">Assist Prod-Pers Care/Safety</button></li>
+  <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-[#0b1056] hover:bg-gray-100 hover:scale-105">Assist-Life Stage, Transition</button></li>
+  <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-[#0b1056] hover:bg-gray-100 hover:scale-105">Assist-Personal Activities</button></li>
+  <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-[#0b1056] hover:bg-gray-100 hover:scale-105">Assist-Travel/Transport</button></li>
+  <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-[#0b1056] hover:bg-gray-100 hover:scale-105">Daily Tasks/Shared Living</button></li>
+  <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-[#0b1056] hover:bg-gray-100 hover:scale-105">Innov Community Participation</button></li>
+  <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-[#0b1056] hover:bg-gray-100 hover:scale-105">Development-Life Skills</button></li>
+  <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-[#0b1056] hover:bg-gray-100 hover:scale-105">Household Tasks</button></li>
+  <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-[#0b1056] hover:bg-gray-100 hover:scale-105">Participate Community</button></li>
+  <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-[#0b1056] hover:bg-gray-100 hover:scale-105">Group/Centre Activities</button></li>
+
+    </ul>
+  )}
+</li>
+
+
+
+
+
+
+
+
+
+
 						<li className="text-gray-300">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
 								<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 							</svg>
 						</li>
-						<li><button onClick={() => handleNavigation('/NDIS')} className="text-md font-semibold hover:text-lg text-[#0b1056] hover:text-gray-500">NDIS</button></li>
+						<li><button onClick={() => handleNavigation('/NDIS')}     className="relative text-md font-semibold text-[#0b1056] hover:text-[#0b1056] transition-all duration-300 hover:text-lg
+    before:content-[''] before:absolute before:left-0 before:-bottom-1 before:w-0 before:h-[2px] before:bg-current before:transition-all before:duration-300 hover:before:w-full">NDIS</button></li>
 						<li className="text-gray-300">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
 								<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 							</svg>
 						</li>
-						<li><button onClick={() => handleNavigation('/Careers')} className="text-md hover:text-lg font-semibold text-[#0b1056] hover:text-gray-500">Careers</button></li>
+						<li><button onClick={() => handleNavigation('/Careers')}     className="relative text-md font-semibold text-[#0b1056] hover:text-[#0b1056] transition-all duration-300 hover:text-lg
+    before:content-[''] before:absolute before:left-0 before:-bottom-1 before:w-0 before:h-[2px] before:bg-current before:transition-all before:duration-300 hover:before:w-full">Careers</button></li>
 						<li className="text-gray-300">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
 								<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 							</svg>
 						</li>
-						<li><button onClick={() => handleNavigation('/ContactUs')}  className="text-md hover:text-lg font-semibold text-[#0b1056] hover:text-gray-500">Contact</button></li>
+						<li><button onClick={() => handleNavigation('/ContactUs')}      className="relative text-md font-semibold text-[#0b1056] hover:text-[#0b1056] transition-all duration-300 hover:text-lg
+    before:content-[''] before:absolute before:left-0 before:-bottom-1 before:w-0 before:h-[2px] before:bg-current before:transition-all before:duration-300 hover:before:w-full">Contact</button></li>
 					</ul>
 					{/* <button className="hidden px-6 py-2 text-sm font-bold text-gray-900 transition duration-200 lg:inline-block lg:ml-auto lg:mr-3 bg-gray-50 hover:bg-gray-100 rounded-xl">Sign In</button>
 					<button className="hidden px-6 py-2 text-sm font-bold text-white transition duration-200 bg-blue-500 lg:inline-block hover:bg-blue-600 rounded-xl">Sign up</button> */}
@@ -316,7 +383,7 @@ export default function MyNavbar() {
         </li>
       </ul>
     </div>
-    <div className="mt-auto ">
+    <div className="mt-auto">
       <div className="flex justify-between pt-6">
         {/* Optional Sign In/Sign Up Buttons */}
       </div>
