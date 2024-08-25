@@ -10,6 +10,9 @@ import Careers from './Components/Careers/Careers';
 import Service1 from './Components/Services/Service 1/Service1';
 import Badge from './Components/NDIS Badge/ndi_badge';
 import Badge2 from './Components/NDIS Badge/badge2';
+import My_Demo from './demo';
+import ImageSlider from './Components/Main_Slider/Main_Slider2';
+
 
 function App() {
   return (
@@ -27,11 +30,8 @@ function App() {
          <Footer />
       </div>
      </Router>
+  {/* <ImageSlider/> */}
 
-
-    {/* <Badge/> */}
-
-    {/* <Badge2/> */}
     </>
   );
 }

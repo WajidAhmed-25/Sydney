@@ -7,12 +7,16 @@ import ActiveSlider from '../Components/Product_Slider/Product_Slider';
 import Devider from '../Components/Divider/Divider';
 import Badge from '../Components/NDIS Badge/ndi_badge';
 import Badge2 from '../Components/NDIS Badge/badge2';
+import MainSlider2 from '../Components/Main_Slider/Main_Slider2';
+import ImageSlider from '../Components/Main_Slider/Main_Slider2';
 
 const HomePage = () => {
   return (
     <div>
      
-        <MainSlider />
+        {/* <MainSlider /> */}
+       
+    <ImageSlider/>
         <hr />
         <CardsModified />
         <HeroHeader />

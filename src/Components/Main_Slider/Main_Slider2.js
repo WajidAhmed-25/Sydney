@@ -1,202 +1,117 @@
-import React, { useState } from 'react';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
+import React, { useState, useEffect } from 'react';
 
-const cards = [
+import p1 from '../Main_Slider/g1.png';
+import p2 from '../Main_Slider/g2.png';
+import p3 from '../Main_Slider/g3.jpg';
 
-  {
-    title: "Before & After School Program",
-    description: "We give your child a good start through educational mornings and fun afternoons. Our programs are super interactive by keeping the kids socially.",
-    image: "https://images.creativemarket.com/0.1.0/ps/6486502/1820/1214/m1/fpnw/wm0/logo-file-21-.jpg?1559615905&s=5750fc62dbc6d44c43bb07e174b50987"
-  },
+import Badge2 from '../NDIS Badge/badge2';
 
+const images = [
   {
-    title: "Community Access Program",
-    description: "At Arch Care, participants are given an opportunity to participate in innovative community programs which not only enhance inclusivity",
-    image: "https://images.creativemarket.com/0.1.0/ps/6486502/1820/1214/m1/fpnw/wm0/logo-file-21-.jpg?1559615905&s=5750fc62dbc6d44c43bb07e174b50987"
+    title: "Trusted NDIS specialist for disabled support.",
+    image: p1,
+    buttons: [
+      { text: "ENQUIRE NOW", color: "orange" },
+      { text: "CALL US NOW", color: "green" }
+    ]
   },
   {
-    title: "Community Access Program",
-    description: "At Arch Care, participants are given an opportunity to participate in innovative community programs which not only enhance inclusivity",
-    image: "https://images.creativemarket.com/0.1.0/ps/6486502/1820/1214/m1/fpnw/wm0/logo-file-21-.jpg?1559615905&s=5750fc62dbc6d44c43bb07e174b50987"
+    title: "Comprehensive NDIS support for your needs",
+    image: p2,
+    buttons: [
+      { text: "LEARN MORE", color: "orange" },
+      { text: "CONTACT US", color: "green" }
+    ]
   },
   {
-    title: "Community Access Program",
-    description: "At Arch Care, participants are given an opportunity to participate in innovative community programs which not only enhance inclusivity",
-    image: "https://images.creativemarket.com/0.1.0/ps/6486502/1820/1214/m1/fpnw/wm0/logo-file-21-.jpg?1559615905&s=5750fc62dbc6d44c43bb07e174b50987"
-  },
-  {
-    title: "Community Access Program",
-    description: "At Arch Care, participants are given an opportunity to participate in innovative community programs which not only enhance inclusivity",
-    image: "https://images.creativemarket.com/0.1.0/ps/6486502/1820/1214/m1/fpnw/wm0/logo-file-21-.jpg?1559615905&s=5750fc62dbc6d44c43bb07e174b50987"
-  },
-  {
-    title: "Community Access Program",
-    description: "At Arch Care, participants are given an opportunity to participate in innovative community programs which not only enhance inclusivity",
-    image: "https://images.creativemarket.com/0.1.0/ps/6486502/1820/1214/m1/fpnw/wm0/logo-file-21-.jpg?1559615905&s=5750fc62dbc6d44c43bb07e174b50987"
-  },
-  {
-    title: "Community Access Program",
-    description: "At Arch Care, participants are given an opportunity to participate in innovative community programs which not only enhance inclusivity",
-    image: "https://images.creativemarket.com/0.1.0/ps/6486502/1820/1214/m1/fpnw/wm0/logo-file-21-.jpg?1559615905&s=5750fc62dbc6d44c43bb07e174b50987"
-  },
-  {
-    title: "Community Access Program",
-    description: "At Arch Care, participants are given an opportunity to participate in innovative community programs which not only enhance inclusivity",
-    image: "https://images.creativemarket.com/0.1.0/ps/6486502/1820/1214/m1/fpnw/wm0/logo-file-21-.jpg?1559615905&s=5750fc62dbc6d44c43bb07e174b50987"
-  },
-  {
-    title: "Community Access Program",
-    description: "At Arch Care, participants are given an opportunity to participate in innovative community programs which not only enhance inclusivity",
-    image: "https://images.creativemarket.com/0.1.0/ps/6486502/1820/1214/m1/fpnw/wm0/logo-file-21-.jpg?1559615905&s=5750fc62dbc6d44c43bb07e174b50987"
-  },
-  {
-    title: "Community Access Program",
-    description: "At Arch Care, participants are given an opportunity to participate in innovative community programs which not only enhance inclusivity",
-    image: "https://images.creativemarket.com/0.1.0/ps/6486502/1820/1214/m1/fpnw/wm0/logo-file-21-.jpg?1559615905&s=5750fc62dbc6d44c43bb07e174b50987"
-  },
-  {
-    title: "Community Access Program",
-    description: "At Arch Care, participants are given an opportunity to participate in innovative community programs which not only enhance inclusivity",
-    image: "https://images.creativemarket.com/0.1.0/ps/6486502/1820/1214/m1/fpnw/wm0/logo-file-21-.jpg?1559615905&s=5750fc62dbc6d44c43bb07e174b50987"
-  },
-  {
-    title: "Community Access Program",
-    description: "At Arch Care, participants are given an opportunity to participate in innovative community programs which not only enhance inclusivity",
-    image: "https://images.creativemarket.com/0.1.0/ps/6486502/1820/1214/m1/fpnw/wm0/logo-file-21-.jpg?1559615905&s=5750fc62dbc6d44c43bb07e174b50987"
-  },
-  {
-    title: "Community Access Program",
-    description: "At Arch Care, participants are given an opportunity to participate in innovative community programs which not only enhance inclusivity",
-    image: "https://images.creativemarket.com/0.1.0/ps/6486502/1820/1214/m1/fpnw/wm0/logo-file-21-.jpg?1559615905&s=5750fc62dbc6d44c43bb07e174b50987"
-  },
-  {
-    title: "Community Access Program",
-    description: "At Arch Care, participants are given an opportunity to participate in innovative community programs which not only enhance inclusivity",
-    image: "https://images.creativemarket.com/0.1.0/ps/6486502/1820/1214/m1/fpnw/wm0/logo-file-21-.jpg?1559615905&s=5750fc62dbc6d44c43bb07e174b50987"
-  },
-  {
-    title: "Community Access Program",
-    description: "At Arch Care, participants are given an opportunity to participate in innovative community programs which not only enhance inclusivity",
-    image: "https://images.creativemarket.com/0.1.0/ps/6486502/1820/1214/m1/fpnw/wm0/logo-file-21-.jpg?1559615905&s=5750fc62dbc6d44c43bb07e174b50987"
-  },
+    title: "Professional care tailored to your requirements",
+    image: p3,
+    buttons: [
+      { text: "GET STARTED", color: "orange" },
+      { text: "BOOK CONSULTATION", color: "green" }
+    ]
+  }
 ];
 
-const MainSlider2 = () => {
+function ImageSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % (cards.length - 4));
+  const goToPrevious = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
   };
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + cards.length - 4) % (cards.length - 4));
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
   };
+
+  useEffect(() => {
+    const interval = setInterval(goToNext, 3000); 
+    return () => clearInterval(interval); 
+  }, []);
 
   return (
+    // <div className="relative w-full max-w-5xl mx-auto mt-32 bg-orange-400 ">
+      <div className='relative w-full h-[70vh] max-sm:h-[90vh] sm:h-[90vh] md:h-[95vh] lg:h-[732px]  overflow-hidden border-b-4 border-[#0b1056]'>
+    <Badge2/>
+      <div className="relative flex items-center justify-center mt-8 overflow-hidden " style={{ height: '516px' }}>
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute transition-transform duration-500 transform ${
+              index === currentIndex
+                ? 'scale-110 z-20'
+                : 'scale-90 z-10 opacity-50'
+            }`}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              transform: `translateX(${(index - currentIndex) * 100}%)`,
+            }}
+          >
+            <img
+              src={image.image}
+              alt={image.title}
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              className='brightness-75'
+            />
+            {index === currentIndex && (
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white">
+                {/* <h2 className="mb-8 text-xl font-bold md:text-3xl text-white [text-shadow:#070a37)] ">{image.title}</h2> */}
+                <h2 className="mb-8 text-xl font-bold text-white md:text-3xl" style={{ textShadow: '0 8px 8px #070a37' }}>
+  {image.title}
+</h2>
 
-    <>
-
-
-
-
-
-      <div>
-        <h2 class="flex flex-row flex-nowrap items-center mt-6">
-          <span class="flex-grow block border-t border-[#7e387d] border-2"></span>
-          <span class="flex-none block mx-4 px-16 py-3.5 text-md rounded leading-none font-medium  bg-[#7e387d] text-white">
-            Workings
-          </span>
-          <span class="flex-grow block border-t border-2 border-[#7e387d]"></span>
-        </h2>
-      </div>
-
-
-      <div className="relative w-full px-4 mx-auto mt-20 mb-8 max-w-7xl">
-
-
-        <div className="overflow-hidden">
-          <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${currentIndex * 20}%)` }}>
-            {cards.map((card, index) => (
-              <div key={index} className="flex-shrink-0 w-1/5 px-2">
-                <div className="overflow-hidden bg-white rounded-lg shadow-lg">
-                  <img src={card.image} alt={card.title} className="object-cover w-full h-48" />
-                  <div className="p-4 text-white bg-gradient-to-br from-[#773876] to-indigo-900 ">
-                    <h3 className="mb-2 text-xl font-semibold">{card.title}</h3>
-                    <p className="text-sm">{card.description}</p>
-                    <div className='flex justify-center w-full '>
-                      <button class="px-4 py-2 mt-4 bg-white tracking-wide hover:bg-[#141514df] hover:border-2  text-gray-800 font-bold rounded-full border-b-4 border-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-[#ffffff] to-[#ffffff] hover:border-white  hover:text-white shadow-md  inline-flex items-center">
-                        <span class="mx-auto text-lg hover:text-white">+</span>
-                      </button>
-                    </div>
-
-                  </div>
+              
+                <div className="flex space-x-12">
+                  {image.buttons.map((button, i) => (
+                    <button
+                      key={i}
+                      className={`px-4 py-2 text-sm md:text-base bg-[#070a37] font-semibold transition duration-300 hover:scale-150 border-white/50 border-2 rounded bg-${button.color}-500 hover:bg-${button.color}-600`}
+                    >
+                      {button.text}
+                    </button>
+                  ))}
                 </div>
               </div>
-            ))}
+            )}
           </div>
-        </div>
-        <button
-          onClick={prevSlide}
-          className="absolute -left-6 p-2 transform -translate-y-1/2 rounded-l-lg bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-[#834a86f7] to-[#7e387d] shadow-md top-1/2 hover:bg-blue-700"
-        >
-          <ChevronLeftIcon className="w-6 h-6 text-white" />
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute -right-6 p-2 transform -translate-y-1/2 bg-blue-600 rounded-r-lg shadow-md top-1/2 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-[#834a86f7] to-[#7e387d] hover:bg-blue-700"
-        >
-          <ChevronRightIcon className="w-6 h-6 text-white" />
-        </button>
+        ))}
       </div>
-
-    </>
+      <button
+        onClick={goToPrevious}
+        className="absolute z-30 p-4 text-white transform -translate-y-1/2 bg-[#070a37] rounded-full top-[65%] max-sm:p-2  max-md:p-2 left-2"
+      >
+        &#10094;
+      </button>
+      <button
+        onClick={goToNext}
+        className="absolute z-30 p-4 bg-[#070a37] text-white transform -translate-y-1/2  rounded-full top-[65%] max-md:p-2 right-2 max-sm:p-2"
+      >
+        &#10095;
+      </button>
+    </div>
   );
-};
+}
 
-export default MainSlider2;
-
-
-
-
-
-
-
-
-
-
-
-//-------------------------------------------------------------------------------------------------------------------------------------//
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default ImageSlider;

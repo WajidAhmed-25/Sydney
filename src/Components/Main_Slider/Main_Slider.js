@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import p1 from './g1.png'
 import p2 from './g2.png'
 import p3 from './g3.jpg'
-import Badge from '../NDIS Badge/ndi_badge';
+
 import Badge2 from '../NDIS Badge/badge2';
 
 const MainSlider = () => {
@@ -52,33 +52,22 @@ const MainSlider = () => {
 
   return (
 
+  <>
+
+
+
+    <div className="relative w-full h-[50vh] max-sm:h-[80vh] sm:h-[80vh] md:h-[95vh] lg:h-[730px]  overflow-hidden border-b-4 border-[#0b1056]">
    
-
-
-    <div className="relative w-full h-[50vh] max-sm:h-[80vh] sm:h-[80vh] md:h-[95vh] lg:h-[730px] overflow-hidden border-b-4 border-[#0b1056]">
-<Badge2/>
+    <Badge2/>
+    
     <div
-      className="flex h-full transition-transform duration-300 ease-in-out"
+      className="flex h-full transition-transform duration-300 ease-in-out max-lg:bg-orange-300"
       style={{ transform: `translateX(-${currentSlide * 100}%)` }}
     >
       {slides.map((slide, index) => (
-        <div key={index} className="relative flex-shrink-0 w-full h-full max-lg:mt-12">
+        <div key={index} className="relative flex-shrink-0 w-full h-full ">
           <img src={slide.image} alt={slide.title} className="object-cover w-full h-full mt-16 " />
-          {/* <div className="absolute inset-0 flex items-center bg-black bg-opacity-40 w-[90%] ">
-            <div className="  px-4 mx-auto text-white bg-green-400  w-[70%] md:px-8 lg:ml-16 lg:mr-auto ">
-              <h2 className="pt-4 pl-6 mb-4 text-lg font-bold leading-2 sm:text-2xl md:text-3xl lg:text-5xl lg:mb-6">{slide.title}</h2>
-              <div className="flex flex-wrap gap-4">
-                {slide.buttons.map((button, btnIndex) => (
-                  <button 
-                    key={btnIndex}
-                    className={`bg-[#0b1056] hover:bg-black ml-4 hover:font-semibold font-bold hover:text-white hover:border-2 hover:border-white text-white px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 rounded transition duration-300 text-[10px] text-bold sm:text-base md:text-lg`}
-                  >
-                    {button.text}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div> */}
+      
 
 
 
@@ -126,7 +115,7 @@ const MainSlider = () => {
       </svg>
     </button>
   </div>
-
+  </> 
   ); 
 };
 
