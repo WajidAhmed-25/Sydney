@@ -6,7 +6,7 @@ export default function ContentHeader() {
 
   return (
     <>
-      <div class="bg-gray-100 py-12">
+      <div class="bg-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="lg:text-center">
             <h2 class="text-xs text-center text-[#2f346f] font-semibold tracking-wide uppercase">Get in Touch</h2>

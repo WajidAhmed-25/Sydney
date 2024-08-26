@@ -12,7 +12,7 @@ import ImageSlider from '../Components/Main_Slider/Main_Slider2';
 
 const HomePage = () => {
   return (
-    <div>
+    <div >
      
         {/* <MainSlider /> */}
        

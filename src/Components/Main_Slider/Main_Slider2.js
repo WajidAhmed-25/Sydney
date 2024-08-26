@@ -57,7 +57,7 @@ function ImageSlider() {
         {images.map((image, index) => (
           <div
             key={index}
-            className={`absolute transition-transform duration-500 transform ${
+            className={`absolute transition-transform duration-500  transform ${
               index === currentIndex
                 ? 'scale-110 z-20'
                 : 'scale-90 z-10 opacity-50'
@@ -87,7 +87,7 @@ function ImageSlider() {
                   {image.buttons.map((button, i) => (
                     <button
                       key={i}
-                      className={`px-4 py-2 text-sm md:text-base bg-[#070a37] font-semibold transition duration-300 hover:scale-150 border-white/50 border-2 rounded bg-${button.color}-500 hover:bg-${button.color}-600`}
+                      className={`px-4 py-2 text-sm md:text-base bg-[#070a37] font-semibold transition duration-300 hover:scale-150 border-white/50 border-2 rounded`}
                     >
                       {button.text}
                     </button>

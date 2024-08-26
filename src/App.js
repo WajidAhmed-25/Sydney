@@ -13,6 +13,8 @@ import Badge2 from './Components/NDIS Badge/badge2';
 import My_Demo from './demo';
 import ImageSlider from './Components/Main_Slider/Main_Slider2';
 
+import PageIntro from './Components/PageIntro/PageIntro';
+
 
 function App() {
   return (
@@ -30,7 +32,11 @@ function App() {
          <Footer />
       </div>
      </Router>
-  {/* <ImageSlider/> */}
+{/* 
+<PageIntro page_name="About Us"/> */}
+
+
+
 
     </>
   );

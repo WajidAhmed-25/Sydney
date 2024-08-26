@@ -38,7 +38,7 @@ export default function NDISfaq() {
     return (
         <>
             <PageIntro page_name="NDIS"/>
-            <section className="py-2 pb-16 bg-gray-50 sm:py-16 lg:py-24">
+            <section className="py-2 pb-16 bg-white sm:py-16 lg:py-24">
                 <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                     <div className="max-w-2xl mx-auto text-center">
                         <h2 className="text-3xl font-bold leading-tight text-[#0b1056] underline sm:text-4xl lg:text-5xl underline-offset-8 max-lg:mt-6 max-sm:mt-14">

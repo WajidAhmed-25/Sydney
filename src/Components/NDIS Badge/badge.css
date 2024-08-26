@@ -1,131 +1,78 @@
 
-.my_anchor{text-decoration:none;}
-.firstLine {
-    font-size: 24px;
-    font-weight: 300;
-}.secondLine {
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 600;
-    background-image: url('./NDIS-logo.png');
-    background-repeat: no-repeat;
-    background-size: contain; 
- background-position: center; 
-  display: inline-block;
-    width: 100%; 
-    height: 70px;
-    color: transparent; 
-} .thirdLine {
-    font-size: 26px;
-    line-height: 32px;
-    font-weight: 300;
-}
-
 .badges {
-    /* position:relative; */
-    margin:140px auto;
-    width:200px;
-    height:200px;
-    background:#0b1056;
-    border-radius:100%;
+    width: 200px;
+    height: 200px;
+    background: #0b1056;
+    border-radius: 100%;
     color: #FFF;
     line-height: 25px;
     text-align: center;
     text-transform: uppercase;
-    font-family: "Open Sans",sans-serif;
-    -webkit-animation: 3s ease-in-out 0s normal none infinite running swing;
-    -moz-animation: 3s ease-in-out 0s normal none infinite running swing;
-    -o-animation: 3s ease-in-out 0s normal none infinite running swing;
-    animation: 3s ease-in-out 0s normal none infinite running swing;
-    
-    -webkit-transform-origin: 100px -71px;
-    -moz-transform-origin: 100px -71px;
-    -o-transform-origin: 100px -71px;
-    transform-origin: 100px -71px;
-}
-.badges:before{
-    content:'';
-    position:absolute;
-    top:90px;left:90px;
-    width:20px;height:20px;
-    border-radius:100%;
-    -webkit-box-shadow: 0px -82px 0px -2px #fff, 0px -100px #0b1056,20px -98px #0b1056,39px -94px #0b1056,56px -85px #0b1056,71px -72px #0b1056,
-                83px -57px #0b1056,93px -40px #0b1056,98px -20px #0b1056,100px 0px #0b1056,
-                
-                -20px -98px #0b1056,-39px -94px #0b1056,-71px -72px #0b1056,
-                -56px -85px #0b1056,-83px -57px #0b1056,-93px -40px #0b1056,-98px -20px #0b1056,-100px 0px #0b1056,
-                
-                0px 100px #0b1056,-20px 98px #0b1056,-39px 94px #0b1056,-56px 85px #0b1056,
-                -71px 72px #0b1056,-83px 57px #0b1056,-93px -40px #0b1056,-98px 20px #0b1056,-93px 40px #0b1056,
-                
-                20px 98px #0b1056,39px 94px #0b1056,56px 85px #0b1056,
-                71px 72px #0b1056,83px 57px #0b1056,93px 40px #0b1056,98px 20px #0b1056;
-                
-    
-    -moz-box-shadow: 0px -82px 0px -2px #fff, 0px -100px #0b1056,20px -98px #0b1056,39px -94px #0b1056,56px -85px #0b1056,71px -72px #0b1056,
-                83px -57px #0b1056,93px -40px #0b1056,98px -20px #0b1056,100px 0px #0b1056,
-                
-                -20px -98px #0b1056,-39px -94px #0b1056,-71px -72px #0b1056,
-                -56px -85px #0b1056,-83px -57px #0b1056,-93px -40px #0b1056,-98px -20px #0b1056,-100px 0px #0b1056,
-                
-                0px 100px #0b1056,-20px 98px #0b1056,-39px 94px #0b1056,-56px 85px #0b1056,
-                -71px 72px #0b1056,-83px 57px #0b1056,-93px -40px #0b1056,-98px 20px #0b1056,-93px 40px #0b1056,
-                
-                20px 98px #0b1056,39px 94px #0b1056,56px 85px #0b1056,
-                71px 72px #0b1056,83px 57px #0b1056,93px 40px #0b1056,98px 20px #0b1056;
-                
-    
-    -o-box-shadow: 0px -82px 0px -2px #fff, 0px -100px #0b1056,20px -98px #0b1056,39px -94px #0b1056,56px -85px #0b1056,71px -72px #0b1056,
-                83px -57px #0b1056,93px -40px #0b1056,98px -20px #0b1056,100px 0px #0b1056,
-                
-                -20px -98px #0b1056,-39px -94px #0b1056,-71px -72px #0b1056,
-                -56px -85px #0b1056,-83px -57px #0b1056,-93px -40px #0b1056,-98px -20px #0b1056,-100px 0px #0b1056,
-                
-                0px 100px #0b1056,-20px 98px #0b1056,-39px 94px #0b1056,-56px 85px #0b1056,
-                -71px 72px #0b1056,-83px 57px #0b1056,-93px -40px #0b1056,-98px 20px #0b1056,-93px 40px #0b1056,
-                
-                20px 98px #0b1056,39px 94px #0b1056,56px 85px #0b1056,
-                71px 72px #0b1056,83px 57px #0b1056,93px 40px #0b1056,98px 20px #0b1056;
-                
-    
-    box-shadow: 0px -82px 0px -2px #fff, 0px -100px #0b1056,20px -98px #0b1056,39px -94px #0b1056,56px -85px #0b1056,71px -72px #0b1056,
-                83px -57px #0b1056,93px -40px #0b1056,98px -20px #0b1056,100px 0px #0b1056,
-                
-                -20px -98px #0b1056,-39px -94px #0b1056,-71px -72px #0b1056,
-                -56px -85px #0b1056,-83px -57px #0b1056,-93px -40px #0b1056,-98px -20px #0b1056,-100px 0px #0b1056,
-                
-                0px 100px #0b1056,-20px 98px #0b1056,-39px 94px #0b1056,-56px 85px #0b1056,
-                -71px 72px #0b1056,-83px 57px #0b1056,-93px -40px #0b1056,-98px 20px #0b1056,-93px 40px #0b1056,
-                
-                20px 98px #0b1056,39px 94px #0b1056,56px 85px #0b1056,
-                71px 72px #0b1056,83px 57px #0b1056,93px 40px #0b1056,98px 20px #0b1056;
-}
-.badges:after{
-    content:'';
-    position:absolute;
-    top:-70px;left:99px;
-    width:2px;height:81px;
-    border-radius:0%;
-    background:#000;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    animation: swing 3s ease-in-out infinite;
+
+    /* Centering adjustments */
+    margin: 0; /* Reset margin */
+    transform-origin: 100px 100px; /* Adjust transform-origin for proper swinging */
 }
 
-@-webkit-keyframes swing{
-    0%{-webkit-transform:rotate(5deg);}
-    50%{-webkit-transform:rotate(-5deg);}
-    100%{-webkit-transform:rotate(5deg);}
+.badges:before {
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    box-shadow: 0px -82px 0px -2px #fff, 
+                0px -100px #0b1056, 
+                20px -98px #04072f, 
+                39px -94px #0b1056, 
+                56px -85px #0b1056, 
+                71px -72px #0b1056,
+                83px -57px #0b1056, 
+                93px -40px #0b1056, 
+                98px -20px #0b1056, 
+                100px 0px #0b1056,
+                -20px -98px #0b1056, 
+                -39px -94px #0b1056, 
+                -71px -72px #0b1056, 
+                -56px -85px #0b1056, 
+                -83px -57px #0b1056, 
+                -93px -40px #0b1056, 
+                -98px -20px #0b1056, 
+                -100px 0px #0b1056,
+                0px 100px #0b1056, 
+                -20px 98px #0b1056, 
+                -39px 94px #0b1056, 
+                -56px 85px #0b1056, 
+                -71px 72px #0b1056, 
+                -83px 57px #0b1056, 
+                -93px -40px #0b1056, 
+                -98px 20px #0b1056, 
+                -93px 40px #0b1056,
+                20px 98px #0b1056, 
+                39px 94px #0b1056, 
+                56px 85px #0b1056, 
+                71px 72px #0b1056, 
+                83px 57px #0b1056, 
+                93px 40px #0b1056, 
+                98px 20px #0b1056;
 }
-@-moz-keyframes swing{
-    0%{-moz-transform:rotate(5deg);}
-    50%{-moz-transform:rotate(-5deg);}
-    100%{-moz-transform:rotate(5deg);}
+
+.badges:after {
+    content: '';
+    position: absolute;
+    top: -70px;
+    left: 99px;
+    width: 2px;
+    height: 81px;
+    background: #000;
 }
-@-o-keyframes swing{
-    0%{-o-transform:rotate(5deg);}
-    50%{-o-transform:rotate(-5deg);}
-    100%{-o-transform:rotate(5deg);}
-}
-@keyframes swing{
-    0%{transform:rotate(5deg);}
-    50%{transform:rotate(-5deg);}
-    100%{transform:rotate(5deg);}
+
+@keyframes swing {
+    0% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    100% { transform: rotate(5deg); }
 }
