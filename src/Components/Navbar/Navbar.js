@@ -6,10 +6,15 @@ import { useNavigate } from 'react-router-dom';
 import my_logo from './scare.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import Service_Card from '../Services/Service_Page/Service';
 
 
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 export default function MyNavbar() {
+
+
+
 
 	const navigate = useNavigate();
 	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -67,8 +72,14 @@ export default function MyNavbar() {
 	}, []);
 
 
+  const continents = ['Africa', 'Antarctica', 'Asia', 'Europe', 'North America', 'South America', 'Australia'];
+
+
+
+
 	return (
 		<>
+
 			<div onMouseLeave={handleMouseLeave}>
 				{/* Desktop View */}
 			
@@ -133,17 +144,22 @@ export default function MyNavbar() {
       className="absolute mt-6 -ml-16 text-center transition duration-200 ease-in-out transform bg-white border-[#0b10567e] border-2 rounded-lg shadow-xl w-72 -left-6 hover:scale-105 hover:shadow-2xl"
       onMouseLeave={handleMouseLeave}
     >
-      <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Assist Access/Maintain Employ</button></li>
-  <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Assist Prod-Pers Care/Safety</button></li>
-  <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Assist-Life Stage, Transition</button></li>
-  <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Assist-Personal Activities</button></li>
-  <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Assist-Travel/Transport</button></li>
-  <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Daily Tasks/Shared Living</button></li>
-  <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Innov Community Participation</button></li>
-  <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Development-Life Skills</button></li>
-  <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Household Tasks</button></li>
-  <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Participate Community</button></li>
-  <li><button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Group/Centre Activities</button></li>
+
+
+<li><a href='/Assist_Life_Stage_Transition ' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Assist Life Stage Transition </a></li>
+  <li><a href='/Assist_Personal_Activities' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Assist Personal Activities</a></li>
+  <li><a href='/Assist_Travel_/_Transport' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Assist Travel / Transport</a></li>
+  <li><a href='/Community_participation' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Community participation</a></li>
+  <li><a href='/Daily_Tasks_/_Shared_Living' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Daily Tasks / Shared Living</a></li>
+  <li><a href='/Telehealth' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Telehealth</a></li>
+  <li><a href='/Development_of_Daily_Living_and_Life_Skills' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Development of Daily Living and Life Skills</a></li>
+ 
+ 
+  <li><a href='#' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Innov Community Participation</a></li>
+  <li><a href='#' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Development-Life Skills</a></li>
+  <li><a href='#' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Household Tasks</a></li>
+  <li><a href='#' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Participate Community</a></li>
+  <li><a href='#' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Group/Centre Activities</a></li>
 
     </ul>
   )}
@@ -302,9 +318,9 @@ export default function MyNavbar() {
     </div>
     <div className="mt-auto">
       <div className="flex justify-between pt-6">
-        {/* Optional Sign In/Sign Up Buttons */}
+  
       </div>
-      <WhatsappChatButton className="z-[1200]" /> {/* Increase z-index for WhatsApp button */}
+      <WhatsappChatButton className="z-[1200]" /> 
       <p className="my-4 text-xs text-center text-gray-400">
         <span>© 2024 ALL RIGHTS RESERVED | DESIGN BY <span onClick={() => window.open('https://leadingedge.vercel.app/', '_blank')} className='text-blue-400 underline cursor-pointer'>LeadingEdge Technologies</span></span>
       </p>
@@ -316,9 +332,13 @@ export default function MyNavbar() {
 
 
 
+     
+     
 
 
 			</div>
+
+    
 		</>
 	);
 }
