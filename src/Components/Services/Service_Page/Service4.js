@@ -1,5 +1,7 @@
 import PageIntro from "../../PageIntro/PageIntro";
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRightLong } from '@fortawesome/free-solid-svg-icons';
 export default function Service_Card4(){
 
 
@@ -29,7 +31,7 @@ export default function Service_Card4(){
         <div className="mb-4 md:mb-8">
           <p className="text-sm leading-relaxed md:text-lg">
           
-Want to get out and about in the local community with a dedicated support worker? Community participation is for you. Our experienced support team works with you to understand your support needs. They consider your likes, dislikes and desired outcomes related to your goals.
+          <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white"/>  Want to get out and about in the local community with a dedicated support worker? Community participation is for you. Our experienced support team works with you to understand your support needs. They consider your likes, dislikes and desired outcomes related to your goals.
 
           </p>
         </div>
@@ -37,7 +39,7 @@ Want to get out and about in the local community with a dedicated support worker
    
         <div>
           <p className="mb-4 text-sm leading-relaxed md:text-lg">
-          You could access Community participation to do activities like:
+          <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white"/>      You could access Community participation to do activities like:
           </p>
         </div>
     
@@ -97,7 +99,7 @@ Want to get out and about in the local community with a dedicated support worker
 
         <div>
           <p className="text-sm leading-relaxed md:text-lg">
-          We provide a highly personalised service to meet your travel needs with your safety at heart and guarantee an enjoyable experience when receiving support from our friendly, caring and compassionate team of support workers.
+          <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white"/>      We provide a highly personalised service to meet your travel needs with your safety at heart and guarantee an enjoyable experience when receiving support from our friendly, caring and compassionate team of support workers.
           </p>
         </div>
     

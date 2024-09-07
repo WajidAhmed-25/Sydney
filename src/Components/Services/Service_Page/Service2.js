@@ -1,5 +1,7 @@
 import PageIntro from "../../PageIntro/PageIntro";
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRightLong } from '@fortawesome/free-solid-svg-icons';
 export default function Service_Card2(props){
     return(
         <>
@@ -10,27 +12,28 @@ export default function Service_Card2(props){
         Assist Personal Activities
         </h1>
         <p className="text-sm leading-relaxed md:text-lg">
-        Sydney 24/7 Care is committed to bring ease into the lives of our clients with disabilities regardless of their age.
+        <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white"/>   Sydney 24/7 Care is committed to bring ease into the lives of our clients with disabilities regardless of their age.
           </p>
-        <div className="mb-4 md:mb-8">
+        <div className="mt-4 mb-4 md:mb-6">
           <p className="text-sm leading-relaxed md:text-lg">
+          <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white "/> 
           We are a leading name for providing first-class assistance for various personal activities such as day to day activities including; home management, eating assistance, getting dressed up, toileting and all other personal care activities.
           </p>
         </div>
  
-        <div className="mb-4 md:mb-8">
+        <div className="mb-4 md:mb-6">
           <p className="text-sm leading-relaxed md:text-lg">
-          Our experienced team works closely with the clients in order to ensure that their needs are fulfilled.
+          <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white "/>   Our experienced team works closely with the clients in order to ensure that their needs are fulfilled.
           </p>
         </div>
         <div>
           <p className="text-sm leading-relaxed md:text-lg">
-          We will tailor your goals and assist you to achieve them if you have disability. Our fully trained personal specialists provide support to you and help you to manage everyday living.
+          <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white "/>   We will tailor your goals and assist you to achieve them if you have disability. Our fully trained personal specialists provide support to you and help you to manage everyday living.
           </p>
         </div>
         <div>
           <p className="mt-4 text-sm leading-relaxed md:text-lg">
-          Our services are exclusively designed to give you the life you deserve.
+          <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white "/>  Our services are exclusively designed to give you the life you deserve.
           </p>
         </div>
       </div>

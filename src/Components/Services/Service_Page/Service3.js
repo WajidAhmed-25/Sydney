@@ -1,5 +1,7 @@
 import PageIntro from "../../PageIntro/PageIntro";
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRightLong } from '@fortawesome/free-solid-svg-icons';
 export default function Service_Card3(){
 
 
@@ -30,7 +32,7 @@ export default function Service_Card3(){
           </p>
         <div className="mb-4 md:mb-8">
           <p className="text-sm leading-relaxed md:text-lg">
-          Travelling to places using assistive equipment can be challenging at times if you do not have access to an appropriately modified vehicle for transportation. If you are planning to hire an assistant who can help with travel and transport across various locations in Sydney, our skilled support workers are here to help.
+          <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white"/>    Travelling to places using assistive equipment can be challenging at times if you do not have access to an appropriately modified vehicle for transportation. If you are planning to hire an assistant who can help with travel and transport across various locations in Sydney, our skilled support workers are here to help.
 We have support workers who can provide the assistance you need to safely travel to a location of your choice using highly accessible vehicles. Furthermore, our team can assist you with the use of public transportation to meet your travel needs.
           </p>
         </div>
@@ -38,7 +40,7 @@ We have support workers who can provide the assistance you need to safely travel
    
         <div>
           <p className="mb-4 text-sm leading-relaxed md:text-lg">
-          Our team of support workers can assist you with travel arrangements to attend:
+          <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white"/>      Our team of support workers can assist you with travel arrangements to attend:
           </p>
         </div>
     
@@ -98,7 +100,7 @@ We have support workers who can provide the assistance you need to safely travel
 
         <div>
           <p className="text-sm leading-relaxed md:text-lg">
-          We provide a highly personalised service to meet your travel needs with your safety at heart and guarantee an enjoyable experience when receiving support from our friendly, caring and compassionate team of support workers.
+          <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white"/>   We provide a highly personalised service to meet your travel needs with your safety at heart and guarantee an enjoyable experience when receiving support from our friendly, caring and compassionate team of support workers.
           </p>
         </div>
     

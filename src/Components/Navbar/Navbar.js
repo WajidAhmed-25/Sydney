@@ -153,13 +153,14 @@ export default function MyNavbar() {
   <li><a href='/Daily_Tasks_/_Shared_Living' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Daily Tasks / Shared Living</a></li>
   <li><a href='/Telehealth' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Telehealth</a></li>
   <li><a href='/Development_of_Daily_Living_and_Life_Skills' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Development of Daily Living and Life Skills</a></li>
+  <li><a href='/Innovative_Community_Participation' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Innovative Community Participation</a></li>
+ <li><a href='/Development_Life_skills' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Development-Life Skills</a></li>
+  <li><a href='/Household_tasks' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Household Tasks</a></li>
+  <li><a href='/service11' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Social and Participating Community</a></li>
  
  
-  <li><a href='#' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Innov Community Participation</a></li>
-  <li><a href='#' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Development-Life Skills</a></li>
-  <li><a href='#' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Household Tasks</a></li>
-  <li><a href='#' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Participate Community</a></li>
   <li><a href='#' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Group/Centre Activities</a></li>
+  
 
     </ul>
   )}
@@ -239,61 +240,23 @@ export default function MyNavbar() {
           </button>
           {isDropdownOpen && (
             <ul className="absolute w-64 mt-2 -left-20 bg-white border rounded shadow-lg z-[1100] right-0 transform translate-y-2">
-              <li>
-                <button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-[#0b1056] transition duration-200 ease-in-out transform hover:scale-105">
-                  Assist Access/Maintain Employ
-                </button>
-              </li>
-              <li>
-                <button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-[#0b1056] transition duration-200 ease-in-out transform hover:scale-105">
-				Assist Prod-Pers Care/Safety
-                </button>
-              </li>
-              <li>
-                <button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-[#0b1056] transition duration-200 ease-in-out transform hover:scale-105">
-				Assist-Life Stage, Transition
-                </button>
-              </li>
-              <li>
-                <button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-[#0b1056] transition duration-200 ease-in-out transform hover:scale-105">
-				Assist-Personal Activities
-                </button>
-              </li>
-			  <li>
-                <button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-[#0b1056] transition duration-200 ease-in-out transform hover:scale-105">
-				Assist-Travel/Transport
-                </button>
-              </li>
-              <li>
-                <button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-[#0b1056] transition duration-200 ease-in-out transform hover:scale-105">
-				Daily Tasks/Shared Living
-                </button>
-              </li>
-              <li>
-                <button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-[#0b1056] transition duration-200 ease-in-out transform hover:scale-105">
-				Innov Community Participation
-                </button>
-              </li>
-              <li>
-                <button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-[#0b1056] transition duration-200 ease-in-out transform hover:scale-105">
-				Development-Life Skills
-                </button>
-              </li>
-              <li>
-                <button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-[#0b1056] transition duration-200 ease-in-out transform hover:scale-105">
-				Household Tasks
-                </button>
-              </li>
-              <li>
-                <button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-[#0b1056] transition duration-200 ease-in-out transform hover:scale-105">
-				Participate Community
-                </button>
-              </li>
-              <li>
-                <button className="block w-full px-4 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-[#0b1056] transition duration-200 ease-in-out transform hover:scale-105">
-				Group/Centre Activities
-                </button>
-              </li>
+
+
+<li><a href='/Assist_Life_Stage_Transition ' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Assist Life Stage Transition </a></li>
+  <li><a href='/Assist_Personal_Activities' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Assist Personal Activities</a></li>
+  <li><a href='/Assist_Travel_/_Transport' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Assist Travel / Transport</a></li>
+  <li><a href='/Community_participation' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Community participation</a></li>
+  <li><a href='/Daily_Tasks_/_Shared_Living' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Daily Tasks / Shared Living</a></li>
+  <li><a href='/Telehealth' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Telehealth</a></li>
+  <li><a href='/Development_of_Daily_Living_and_Life_Skills' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Development of Daily Living and Life Skills</a></li>
+  <li><a href='/Innovative_Community_Participation' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Innovative Community Participation</a></li>
+ <li><a href='/Development_Life_skills' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Development-Life Skills</a></li>
+  <li><a href='/Household_tasks' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Household Tasks</a></li>
+  <li><a href='/service11' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Social and Participating Community</a></li>
+ 
+ 
+  <li><a href='#' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Group/Centre Activities</a></li>
+  
            
          
             </ul>

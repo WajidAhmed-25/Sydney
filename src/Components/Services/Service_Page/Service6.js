@@ -1,19 +1,11 @@
 import PageIntro from "../../PageIntro/PageIntro";
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRightLong } from '@fortawesome/free-solid-svg-icons';
+
 export default function Service_Card6(props){
 
 
-    
-    const continents = [
-  
-'Assistance with daily basic tasks',
-'Preparing healthy meals',
-'Helping you participate in recreational activities',
-'Assistance with communication and paying bills',
-'Shopping',
-'Helping you with medication'
-
- ];
 
 
     return(
@@ -29,7 +21,7 @@ export default function Service_Card6(props){
           </p>
         <div className="mb-4 md:mb-8">
           <p className="text-sm leading-relaxed md:text-lg">
-          Sydney 24/7 Care also offers Telehealth services that support clients to receive therapy via video-conferencing technology. This is available for all clients where home visits are not an option or simply if this is a client’s preference.
+          <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white"/>       Sydney 24/7 Care also offers Telehealth services that support clients to receive therapy via video-conferencing technology. This is available for all clients where home visits are not an option or simply if this is a client’s preference.
 
           </p>
         </div>
@@ -38,7 +30,7 @@ export default function Service_Card6(props){
 
         <div className="mb-4 md:mb-8">
           <p className="text-sm leading-relaxed md:text-lg">
-          We use an application called Zoom to conduct the Telehealth consult and have had incredible responses to therapy provided in this way. It is important to note that telehealth services do not have any travel fees associated, allowing for more client contact.
+          <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white"/>      We use an application called Zoom to conduct the Telehealth consult and have had incredible responses to therapy provided in this way. It is important to note that telehealth services do not have any travel fees associated, allowing for more client contact.
 
           </p>
         </div>
@@ -50,7 +42,7 @@ export default function Service_Card6(props){
 
         <div className="mb-4 md:mb-8">
           <p className="text-sm leading-relaxed md:text-lg">  
-Are you ready to submit your referral?
+          <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white"/>   Are you ready to submit your referral?
           </p>
         </div>
   

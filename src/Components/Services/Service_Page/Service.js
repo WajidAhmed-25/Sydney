@@ -1,5 +1,7 @@
 import PageIntro from "../../PageIntro/PageIntro";
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRightLong } from '@fortawesome/free-solid-svg-icons';
 export default function Service_Card1(props){
     return(
         <>
@@ -10,27 +12,27 @@ export default function Service_Card1(props){
         Assist Life Stage Transition
         </h1>
         <p className="text-sm leading-relaxed md:text-lg">
-        Life transitions can be difficult, and sometimes require the support of someone else.
+        <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white "/>  Life transitions can be difficult, and sometimes require the support of someone else.
           </p>
-        <div className="mb-4 md:mb-8">
+        <div className="mt-6 mb-4 md:mb-6">
           <p className="text-sm leading-relaxed md:text-lg">
-          Sydney 24/7 care offers assistance with life stage and transition services for individuals who want our support to live independently in their home.
+          <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white"/>    Sydney 24/7 care offers assistance with life stage and transition services for individuals who want our support to live independently in their home.
           </p>
         </div>
  
-        <div className="mb-4 md:mb-8">
+        <div className="mb-4 md:mb-6">
           <p className="text-sm leading-relaxed md:text-lg">
-          We prioritize client’s wishes and assist them to maintain their financial resources. We have highly qualified and trained professionals who are competent enough to assist clients in life transition stages such as providing financial mentoring and budget assistance, daily planning support, capacity building, decisions making and more.
+          <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white"/>    We prioritize client’s wishes and assist them to maintain their financial resources. We have highly qualified and trained professionals who are competent enough to assist clients in life transition stages such as providing financial mentoring and budget assistance, daily planning support, capacity building, decisions making and more.
           </p>
         </div>
         <div>
           <p className="text-sm leading-relaxed md:text-lg">
-          Get assistance with life stages and transition and participate in your community with liveliness.
+          <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white "/>    Get assistance with life stages and transition and participate in your community with liveliness.
           </p>
         </div>
         <div>
           <p className="mt-4 text-sm leading-relaxed md:text-lg">
-          The root of all our services is trust, reliability, empathy and understanding.
+          <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white "/>       The root of all our services is trust, reliability, empathy and understanding.
           </p>
         </div>
       </div>
