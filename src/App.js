@@ -25,6 +25,8 @@ import Service_Card8 from './Components/Services/Service_Page/Service8';
 import Service_Card9 from './Components/Services/Service_Page/Service9';
 import Service_Card10 from './Components/Services/Service_Page/Service10';
 import Service_Card11 from './Components/Services/Service_Page/Service11';
+import Service_Card12 from './Components/Services/Service_Page/Service12';
+import Service_Card13 from './Components/Services/Service_Page/Service13';
 
 
 
@@ -48,15 +50,17 @@ function App() {
            <Route path="/Careers" element={<Careers />} />
            <Route path="/Assist_Life_Stage_Transition" element={<Service_Card1/>}/>
            <Route path="/Assist_Personal_Activities" element={<Service_Card2/>}/>
-           <Route path="/Assist_Travel_/_Transport" element={<Service_Card3/>}/>
+           <Route path="/Assist_Travel_Transport" element={<Service_Card3/>}/>
            <Route path="/Community_participation" element={<Service_Card4/>}/>
-           <Route path="/Daily_Tasks_/_Shared_Living" element={<Service_Card5/>}/>
+           <Route path="/Daily_Tasks_Shared_Living" element={<Service_Card5/>}/>
            <Route path="/Telehealth" element={<Service_Card6/>}/>
-           <Route path="/Development_of_Daily_Living_and_Life_Skills" element={<Service_Card7/>}/>
+           <Route path="/Daily_Tasks_Shared_Living2" element={<Service_Card7/>}/>
            <Route path="/Innovative_Community_Participation" element={<Service_Card8/>}/>
            <Route path="/Household_tasks" element={<Service_Card9/>}/>
            <Route path="/Development_Life_skills" element={<Service_Card10/>}/>
            <Route path="/service11" element={<Service_Card11/>}/>
+           <Route path="/Assist_Access/Maintain_Employ" element={<Service_Card12/>}/>
+           <Route path="/Assist_Product_Personal_Care/Safety" element={<Service_Card13/>}/>
   
   
 
