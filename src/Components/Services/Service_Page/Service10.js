@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRightLong } from '@fortawesome/free-solid-svg-icons';
 import {faCaretRight} from '@fortawesome/free-solid-svg-icons';
+import work from '../assist.png'
 
 
 
@@ -475,7 +476,7 @@ To access life skills development supports under the NDIS, individuals need to n
       
       <div className="relative w-full md:w-[40%]">
         <img
-          src="https://images.pexels.com/photos/5697255/pexels-photo-5697255.jpeg?auto=compress&cs=tinysrgb&w=600"
+          src={work}
           alt="Person at counter"
           className="object-cover w-full h-64 bg-center md:h-full"
         />

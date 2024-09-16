@@ -2,6 +2,7 @@ import PageIntro from "../../PageIntro/PageIntro";
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRightLong } from '@fortawesome/free-solid-svg-icons';
+import work from '../assist.png'
 export default function Service_Card3(){
 
 
@@ -113,7 +114,7 @@ We have support workers who can provide the assistance you need to safely travel
 
       <div className="relative w-full md:w-[40%]">
         <img
-          src="https://images.pexels.com/photos/5697255/pexels-photo-5697255.jpeg?auto=compress&cs=tinysrgb&w=600"
+          src={work}
           alt="Person at counter"
           className="object-cover w-full h-64 bg-center md:h-full"
         />
