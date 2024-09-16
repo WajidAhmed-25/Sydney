@@ -2,6 +2,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRightLong } from '@fortawesome/free-solid-svg-icons';
 
+import work from './delta.png'
+
 export default function IntroAboutUs() {
 
     return (
@@ -21,7 +23,7 @@ If you’re an NDIS participant in search of a provider in Sydney we’re here t
 
                         </div>
                         <div class="mt-12 md:mt-10">
-                            <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86" alt="About Us" class="object-cover rounded-lg shadow-md" />
+                            <img src={work} alt="About Us" class="object-cover rounded-lg shadow-md" />
                         </div>
                     </div>
                 </div>

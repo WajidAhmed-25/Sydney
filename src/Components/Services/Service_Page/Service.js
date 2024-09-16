@@ -41,7 +41,7 @@ export default function Service_Card1(props){
         <img
           src={work}
           alt="Person at counter"
-          className="object-cover w-full h-64 bg-center md:h-full"
+          className="object-cover w-full h-64 bg-center md:h-full "
         />
         <Link to="/ContactUs" className="absolute px-10 py-4 text-sm font-semibold bg-white cursor-pointer text-blue-950 hover:border-white hover:border-2 hover:bg-blue-950 hover:text-white bottom-4 left-4 md:bottom-10 md:left-10 md:text-lg">
   Contact Us &#8250;
