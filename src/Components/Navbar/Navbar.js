@@ -141,7 +141,7 @@ export default function MyNavbar() {
   </button>
   {isDropdownOpen && (
     <ul
-      className="absolute mt-6 -ml-16 text-center transition duration-200 ease-in-out transform  border-[#0b10567e] border-2 rounded-lg shadow-xl w-72 -left-6 hover:scale-105 hover:shadow-2xl"
+      className="absolute mt-6 -ml-16 text-center transition duration-200 ease-in-out transform bg-white border-[#0b10567e] border-2 rounded-lg shadow-xl w-72 -left-6 hover:scale-105 hover:shadow-2xl"
       onMouseLeave={handleMouseLeave}
     >
 
