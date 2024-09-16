@@ -58,7 +58,7 @@ export default function ApplyJob() {
           <div className="absolute inset-0 bg-gradient-to-br to-[#0f1781] from-[#0b1056] shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl" style={{ backgroundImage: `url(${bg_d})`}}></div>
           <div className="text-white relative px-4 py-10 bg-gradient-to-br to-indigo-800 from-[#0b1056] shadow-lg sm:rounded-3xl sm:p-20" style={{ backgroundImage: `url(${bg_d})`}}>
             <div className="pb-6 text-center">
-              <h1 className="text-3xl font-semibold">Contact Us!</h1>
+              <h1 className="text-3xl font-semibold">Get Employed Now!</h1>
               <p className="text-gray-300">Fill up the form below to send us a message.</p>
             </div>
             <form onSubmit={handleSubmit}>

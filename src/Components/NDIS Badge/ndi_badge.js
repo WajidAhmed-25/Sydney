@@ -9,7 +9,7 @@ export default function Badge(){
        
         
         <a href="#" className='my_anchor'>
-<div class="badges"><br/>
+<div class="badges bg-yellow-500"><br/>
     <p className='mt-4'>
         <span class="firstLine">Registered</span><br/>
         <span class="secondLine "></span><br/>

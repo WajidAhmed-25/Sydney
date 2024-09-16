@@ -4,12 +4,19 @@ import p1 from '../Main_Slider/g1.png';
 import p2 from '../Main_Slider/g2.png';
 import p3 from '../Main_Slider/g3.jpg';
 
+import p4 from '../Main_Slider/k.jpg';
+import p5 from '../Main_Slider/l.jpg';
+import p6 from '../Main_Slider/m.png';
+import p7 from '../Main_Slider/n.png'
+import p8 from '../Main_Slider/o41.jpg'
+
+
 import Badge2 from '../NDIS Badge/badge2';
 
 const images = [
   {
     title: "Trusted NDIS specialist for disabled support.",
-    image: p1,
+    image: p5,
     buttons: [
       { text: "ENQUIRE NOW", color: "orange" ,link:"/ContactUs"},
       { text: "CALL US NOW", color: "green",link:"/AboutUs"  }
@@ -17,7 +24,7 @@ const images = [
   },
   {
     title: "Comprehensive NDIS support for your needs",
-    image: p2,
+    image: p8,
     buttons: [
       { text: "LEARN MORE", color: "orange",link:"/AboutUs" },
       { text: "CONTACT US", color: "green",link:"/ContactUs" }
@@ -57,7 +64,7 @@ function ImageSlider() {
         {images.map((image, index) => (
           <div
             key={index}
-            className={`absolute transition-transform duration-500  transform ${
+            className={`absolute transition-transform duration-500   transform ${
               index === currentIndex
                 ? 'scale-110 z-20'
                 : 'scale-90 z-10 opacity-50'
@@ -65,7 +72,7 @@ function ImageSlider() {
             style={{
               width: '100%',
               height: '100%',
-              objectFit: 'cover',
+              objectFit: 'full',
               transform: `translateX(${(index - currentIndex) * 100}%)`,
             }}
           >
@@ -73,7 +80,7 @@ function ImageSlider() {
               src={image.image}
               alt={image.title}
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-              className='brightness-75'
+              className=' brightness-75'
             />
             {index === currentIndex && (
               <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white">

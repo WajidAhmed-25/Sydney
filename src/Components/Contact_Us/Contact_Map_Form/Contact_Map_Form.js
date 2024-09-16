@@ -162,7 +162,7 @@ export default function ContactMapForm() {
       
       toast.success('Thank you for contacting Sydney Care 24/7. Your response has been recorded. You will be contacted shortly.');
 
-      // Reset the form
+ 
       setFormData({
         name: "",
         lastname: "",
@@ -174,7 +174,7 @@ export default function ContactMapForm() {
     } catch (error) {
       setStatus('Error sending email');
 
-      // Show error toast
+   
       toast.error('Error sending email. Please try again.');
     }
   };

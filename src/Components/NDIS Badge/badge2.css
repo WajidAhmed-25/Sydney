@@ -1,23 +1,15 @@
-
-
-
-
- 
- .app-download {
+.app-download {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  direction: rtl;
   background-color: #070a37;
   width: 450px;
   position: relative;
-  /* position: fixed; */
-  /* z-index: 1000; */
   margin-top: 83.7px;
   left: 50%;
   transform: translateX(-50%);
   border-bottom-right-radius: 5%; 
- border-bottom-left-radius: 5%;
+  border-bottom-left-radius: 5%;
   box-shadow: 1px 2px 14px 5px #00000070;
   padding: 1rem;
   flex-direction: row;
@@ -29,15 +21,9 @@
   cursor: pointer;
 }
 
-.app-download label#first-title {
-  font-size: 1.3rem;
-
-}
-
+.app-download label#first-title,
 .app-download label#second-title {
   font-size: 1.3rem;
-
-
 }
 
 .picture {
@@ -45,158 +31,91 @@
   height: 64px;
 }
 
-
 @media only screen and (max-width: 1480px) {
   .app-download {
-      padding: 0.4rem;
-      /* background-color: pink; */
+    padding: 0.4rem;
   }
   .picture {
-      width: 120px;
-      height: 60px;
+    width: 120px;
+    height: 60px;
   }
-  .app-download label#first-title {
-      font-size: 1.2rem;
-     
-  }
+  .app-download label#first-title,
   .app-download label#second-title {
-      font-size: 1.2rem;
-   
+    font-size: 1.2rem;
   }
 }
 
-
 @media only screen and (max-width: 1200px) {
   .app-download {
-      padding: 0.5rem;
-  /* background-color: orange; */
+    padding: 0.5rem;
   }
   .app-download label {
     margin: 0 1.8rem; 
-    color: #fff;
-    cursor: pointer;
   }
   .picture {
-      width: 110px;
-      height: 55px;
-  }
-  .app-download label#first-title {
-      font-size: 1.2rem;
-   
-  }
-  .app-download label#second-title {
-      font-size: 1.2rem;
-      
+    width: 110px;
+    height: 55px;
   }
 }
 
 @media only screen and (max-width: 992px) {
   .app-download {
     padding: 0.4rem;
-   /* background-color: yellow; */
-
-}
-.app-download label {
-  margin: 0 2.6rem;
-  color: #fff;
-  cursor: pointer;
-}
-.picture {
-    width: 110px;
-    height: 55px;
-}
-.app-download label#first-title {
-    font-size: 1.2rem;
- 
-}
-.app-download label#second-title {
-    font-size: 1.2rem;
-    
-}
+  }
+  .app-download label {
+    margin: 0 2.6rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .app-download {
     padding: 0.3rem;
-    /* background-color: greenyellow; */
+  }
+  .app-download label {
+    margin: 0 2.8rem;
+  }
 }
-.app-download label {
-  margin: 0 2.8rem;
-  color: #fff;
-  cursor: pointer;
-}
-.picture {
-    width: 110px;
-    height: 55px;
-}
-}
-
-
 
 @media only screen and (max-width: 576px) {
   .app-download {
-    padding: 0.8rem;
-    padding-top: 10px;
     flex-direction: column;
     width: 140px;
-    /* background-color: aquamarine; */
-}
-.app-download label {
-  margin: 0 2.8rem;
-  color: #fff;
-  cursor: pointer;
-}
-.picture {
+    padding-top: 15px;
+    padding-bottom: 10px;
+ 
+  }
+  .picture {
     width: 90px;
     height: 45px;
-}
-.app-download label#first-title {
-  font-size: 1.1rem;
-}
-.app-download label#second-title {
-  font-size: 1.1rem;
-}
-
+  }
+  .app-download label#first-title,
+  .app-download label#second-title {
+    margin-top: 4px;
+    font-size: 1.1rem;
+  }
+  .order-1 { order: 1; }
+  .order-2 { order: 2; }
+  .order-3 { order: 3; }
 }
 
 @media only screen and (max-width: 400px) {
   .app-download {
     padding: 0.2rem;
-    padding-top: 10px;
-    flex-direction: column;
+    padding-top: 15px;
     width: 110px;
-    /* background-color: aqua; */
-  
-}
-.app-download label {
-  margin: 0 2.8rem; 
-  color: #fff;
-  cursor: pointer;
-}
-.picture {
+    padding-bottom: 10px;
+
+  }
+  .picture {
     width: 80px;
     height: 40px;
+  }
+  .app-download label#first-title,
+  .app-download label#second-title {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .app-download label#second-title {
+    padding-bottom: 10px;
+  }
 }
-.app-download label#first-title {
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-.app-download label#second-title {
-  font-size: 0.8rem;
-  font-weight: bold;
-  padding-bottom: 10px;
-}
-
-
-}
-
-
-
-
-
-
-
-
-
-
-

@@ -28,9 +28,9 @@ export default function PageIntro(props) {
       <div className='w-[28%] h-20 -mt-20 border-r-4 border-l-4  border-[#070a37] '> </div>
 
         <div className="flex items-center px-4 py-2 bg-[#070a37] rounded-md sm:px-6 sm:py-3 md:px-8 md:py-4 lg:px-8 lg:py-2 mt-0">
-          <p className="text-xs font-bold text-white sm:text-sm md:text-lg lg:text-xl xl:text-2xl">Registered</p>
+          <p className="text-xs font-semibold text-white sm:text-sm md:text-lg lg:text-xl xl:text-2xl">Registered</p>
           <img src={image} alt="Registered NDIS Provider" className="h-[40px] sm:h-[50px] md:h-[60px] z-1000 lg:h-[70px] xl:h-[80px] mx-2 sm:mx-3 md:mx-4 lg:mx-5" />
-          <p className="text-xs font-bold text-white sm:text-sm md:text-lg lg:text-xl xl:text-2xl">Provider</p>
+          <p className="text-xs font-semibold text-white sm:text-sm md:text-lg lg:text-xl xl:text-2xl">Provider</p>
         </div>
         
       </div>
