@@ -78,11 +78,11 @@ export default function CardsModified() {
         <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
           {cardData.map((card, index) => (
             <div key={index} className="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-[#0b1056] p-2">
-              <div className="flex h-[200px] flex-col justify-between rounded-md p-6">
-                <FontAwesomeIcon icon={card.icon} className="w-12 h-12 fill-[#0b1056]" />
+              <div className="flex h-[200px] flex-col justify-between items-center rounded-md p-6">
+                <FontAwesomeIcon icon={card.icon} className="w-12 h-12  fill-[#0b1056]" />
                 <div className="mt-2 space-y-6">
-                  <h3 className="font-bold text-lg text-[#0b1056] underline underline-offset-2">{card.title}</h3>
-                  <p className="text-[13px] font-semibold leading-normal text-[#0b1056]">{card.description}</p>
+                  <h3 className="font-bold text-lg text-[#0b1056] underline underline-offset-2 text-center">{card.title}</h3>
+                  <p className="text-[13px] font-semibold text-center leading-normal text-[#0b1056]">{card.description}</p>
                 </div>
               </div>
             </div>

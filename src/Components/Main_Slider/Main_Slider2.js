@@ -11,24 +11,24 @@ const images = [
     title: "Trusted NDIS specialist for disabled support.",
     image: p1,
     buttons: [
-      { text: "ENQUIRE NOW", color: "orange" },
-      { text: "CALL US NOW", color: "green" }
+      { text: "ENQUIRE NOW", color: "orange" ,link:"/ContactUs"},
+      { text: "CALL US NOW", color: "green",link:"/AboutUs"  }
     ]
   },
   {
     title: "Comprehensive NDIS support for your needs",
     image: p2,
     buttons: [
-      { text: "LEARN MORE", color: "orange" },
-      { text: "CONTACT US", color: "green" }
+      { text: "LEARN MORE", color: "orange",link:"/AboutUs" },
+      { text: "CONTACT US", color: "green",link:"/ContactUs" }
     ]
   },
   {
     title: "Professional care tailored to your requirements",
     image: p3,
     buttons: [
-      { text: "GET STARTED", color: "orange" },
-      { text: "BOOK CONSULTATION", color: "green" }
+      { text: "GET STARTED", color: "orange",link:"/AboutUs" },
+      { text: "BOOK CONSULTATION", color: "green",link:"/ContactUs"}
     ]
   }
 ];
@@ -45,7 +45,7 @@ function ImageSlider() {
   };
 
   useEffect(() => {
-    const interval = setInterval(goToNext, 3000); 
+    const interval = setInterval(goToNext, 4500); 
     return () => clearInterval(interval); 
   }, []);
 
@@ -85,12 +85,13 @@ function ImageSlider() {
               
                 <div className="flex space-x-12">
                   {image.buttons.map((button, i) => (
-                    <button
+                    <a
+                    href={button.link}
                       key={i}
                       className={`px-4 py-2 text-sm md:text-base bg-[#070a37] font-semibold transition duration-300 hover:scale-150 border-white/50 border-2 rounded`}
                     >
                       {button.text}
-                    </button>
+                    </a>
                   ))}
                 </div>
               </div>

@@ -15,83 +15,104 @@ const Footer = () => {
           <div className="w-full px-4 mb-6 md:w-1/4 md:mb-0">
             <h3 className="p-2 mb-4 font-bold text-center border-b-2 text-[#0b1056] border-[#0b1056]">QUICK LINKS</h3>
             <ul className="space-y-2">
-              <li><button onClick={ () => {handleNavigation('/')}}  className="hover:text-[#0b1056]">Home</button></li>
-              <li><button onClick={ () => {handleNavigation('/AboutUs')}}  className="hover:text-[#0b1056]">About Us</button></li>
-              <li><button onClick={ () => {handleNavigation('/Careers')}}  className="hover:text-[#0b1056]">Careers</button></li>
-              <li><button onClick={ () => {handleNavigation('/NDIS')}}  className="hover:text-[#0b1056]">NDIS</button></li>
-              <li><button onClick={ () => {handleNavigation('/ContactUs')}}  className="hover:text-[#0b1056]">Contact us</button></li>
+              <li className=' hover:font-semibold hover:scale-125 hover:transition-all hover:duration-300'><button onClick={ () => {handleNavigation('/')}}  className="hover:text-[#0b1056]">Home</button></li>
+              <li className=' hover:font-semibold hover:scale-125 hover:transition-all hover:duration-300'><button onClick={ () => {handleNavigation('/AboutUs')}}  className="hover:text-[#0b1056]">About Us</button></li>
+              <li className=' hover:font-semibold hover:scale-125 hover:transition-all hover:duration-300'><button onClick={ () => {handleNavigation('/Careers')}}  className="hover:text-[#0b1056]">Careers</button></li>
+              <li className=' hover:font-semibold hover:scale-125 hover:transition-all hover:duration-300'><button onClick={ () => {handleNavigation('/NDIS')}}  className="hover:text-[#0b1056]">NDIS</button></li>
+              <li className=' hover:font-semibold hover:scale-125 hover:transition-all hover:duration-300'><button onClick={ () => {handleNavigation('/ContactUs')}}  className="hover:text-[#0b1056]">Contact us</button></li>
             </ul>
           </div>
           
           <div className="w-full px-4 mb-6 md:w-1/4 md:mb-0">
   <h3 className="p-2 mb-4 font-bold text-center border-b-2 text-[#0b1056] border-[#0b1056]">OUR SERVICES</h3>
   <ul className="space-y-2">
-    <li className="flex items-center">
+    <li className="flex items-center hover:font-semibold hover:scale-125 hover:transition-all hover:duration-300">
       <svg className="w-4 h-4 mr-2 text-[#0b1056]" fill="currentColor" viewBox="0 0 20 20">
         <circle cx="10" cy="10" r="5" />
       </svg>
-      <button className="hover:text-[#0b1056]">Assist Access/Maintain Employ</button>
+      <a href="/Assist_Access/Maintain_Employ" className="hover:text-[#0b1056] ">Assist Access/Maintain Employ</a>
     </li>
-    <li className="flex items-center">
+    <li className="flex items-center hover:font-semibold hover:scale-125 hover:transition-all hover:duration-300">
       <svg className="w-4 h-4 mr-2 text-[#0b1056]" fill="currentColor" viewBox="0 0 20 20">
         <circle cx="10" cy="10" r="5" />
       </svg>
-      <button className="hover:text-[#0b1056]">Assist Prod-Pers Care/Safety</button>
+      <a href="/Assist_Life_Stage_Transition" className="hover:text-[#0b1056]">Assist-Life Stage, Transition</a>
     </li>
-    <li className="flex items-center">
+    <li className="flex items-center hover:font-semibold hover:scale-125 hover:transition-all hover:duration-300">
       <svg className="w-4 h-4 mr-2 text-[#0b1056]" fill="currentColor" viewBox="0 0 20 20">
         <circle cx="10" cy="10" r="5" />
       </svg>
-      <button className="hover:text-[#0b1056]">Assist-Life Stage, Transition</button>
+      <a href="/Assist_Personal_Activitie" className="hover:text-[#0b1056]">Assist-Personal Activities</a>
     </li>
-    <li className="flex items-center">
+
+    <li className="flex items-center hover:font-semibold hover:scale-125 hover:transition-all hover:duration-300">
       <svg className="w-4 h-4 mr-2 text-[#0b1056]" fill="currentColor" viewBox="0 0 20 20">
         <circle cx="10" cy="10" r="5" />
       </svg>
-      <button className="hover:text-[#0b1056]">Assist-Personal Activities</button>
+      <a href="/Assist_Product_Personal_Care/Safety" className="hover:text-[#0b1056]">Assist Product-Personal Care/Safety</a>
     </li>
-    <li className="flex items-center">
+
+    <li className="flex items-center hover:font-semibold hover:scale-125 hover:transition-all hover:duration-300">
       <svg className="w-4 h-4 mr-2 text-[#0b1056]" fill="currentColor" viewBox="0 0 20 20">
         <circle cx="10" cy="10" r="5" />
       </svg>
-      <button className="hover:text-[#0b1056]">Assist-Travel/Transport</button>
+      <a href="/Assist_Travel_Transport" className="hover:text-[#0b1056]">Assist-Travel/Transport</a>
     </li>
-    <li className="flex items-center">
+
+    <li className="flex items-center hover:font-semibold hover:scale-125 hover:transition-all hover:duration-300">
       <svg className="w-4 h-4 mr-2 text-[#0b1056]" fill="currentColor" viewBox="0 0 20 20">
         <circle cx="10" cy="10" r="5" />
       </svg>
-      <button className="hover:text-[#0b1056]">Daily Tasks/Shared Living</button>
+      <a href="/Daily_Tasks_Shared_Living" className="hover:text-[#0b1056]">Daily Tasks/Shared Living</a>
     </li>
-    <li className="flex items-center">
+    <li className="flex items-center hover:font-semibold hover:scale-125 hover:transition-all hover:duration-300">
       <svg className="w-4 h-4 mr-2 text-[#0b1056]" fill="currentColor" viewBox="0 0 20 20">
         <circle cx="10" cy="10" r="5" />
       </svg>
-      <button className="hover:text-[#0b1056]">Innov Community Participation</button>
+      <a href="/Innovative_Community_Participation" className="hover:text-[#0b1056]">Innovative Community Participation</a>
     </li>
-    <li className="flex items-center">
+    <li className="flex items-center hover:font-semibold hover:scale-125 hover:transition-all hover:duration-300">
       <svg className="w-4 h-4 mr-2 text-[#0b1056]" fill="currentColor" viewBox="0 0 20 20">
         <circle cx="10" cy="10" r="5" />
       </svg>
-      <button className="hover:text-[#0b1056]">Development-Life Skills</button>
+      <a href="/Community_participation" className="hover:text-[#0b1056]">Community Participation</a>
     </li>
-    <li className="flex items-center">
+
+    <li className="flex items-center hover:font-semibold hover:scale-125 hover:transition-all hover:duration-300">
       <svg className="w-4 h-4 mr-2 text-[#0b1056]" fill="currentColor" viewBox="0 0 20 20">
         <circle cx="10" cy="10" r="5" />
       </svg>
-      <button className="hover:text-[#0b1056]">Household Tasks</button>
+      <a href="/Telehealth" className="hover:text-[#0b1056]">Telehealth</a>
     </li>
-    <li className="flex items-center">
+    
+    <li className="flex items-center hover:font-semibold hover:scale-125 hover:transition-all hover:duration-300">
       <svg className="w-4 h-4 mr-2 text-[#0b1056]" fill="currentColor" viewBox="0 0 20 20">
         <circle cx="10" cy="10" r="5" />
       </svg>
-      <button className="hover:text-[#0b1056]">Participate Community</button>
+      <a href="/Development_Life_skills" className="hover:text-[#0b1056]">Development-Life Skills</a>
     </li>
-    <li className="flex items-center">
+
+    <li className="flex items-center hover:font-semibold hover:scale-125 hover:transition-all hover:duration-300">
       <svg className="w-4 h-4 mr-2 text-[#0b1056]" fill="currentColor" viewBox="0 0 20 20">
         <circle cx="10" cy="10" r="5" />
       </svg>
-      <button className="hover:text-[#0b1056]">Group/Centre Activities</button>
+      <a href="/Household_tasks" className="hover:text-[#0b1056]">Household Tasks</a>
     </li>
+
+    <li className="flex items-center hover:font-semibold hover:scale-125 hover:transition-all hover:duration-300">
+      <svg className="w-4 h-4 mr-2 text-[#0b1056]" fill="currentColor" viewBox="0 0 20 20">
+        <circle cx="10" cy="10" r="5" />
+      </svg>
+      <a href="/Social_and_Participating_Community" className="hover:text-[#0b1056]">Social and Participating Commmunity</a>
+    </li>
+
+    <li className="flex items-center hover:font-semibold hover:scale-125 hover:transition-all hover:duration-300">
+      <svg className="w-4 h-4 mr-2 text-[#0b1056]" fill="currentColor" viewBox="0 0 20 20">
+        <circle cx="10" cy="10" r="5" />
+      </svg>
+      <a href="/Group_Centre_Activities" className="hover:text-[#0b1056]">Group/Centre Activities</a>
+    </li>
+    
   </ul>
 </div>
 

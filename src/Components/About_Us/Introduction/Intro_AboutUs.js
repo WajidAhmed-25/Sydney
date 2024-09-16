@@ -13,7 +13,7 @@ export default function IntroAboutUs() {
                     <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 ">
                         <div class="max-w-xl ">
                             <h2 class="text-3xl font-extrabold text-center text-[#0b1056] sm:text-5xl underline underline-offset-8 max-lg:mt-3 max-md:mt-2 ">Who We Are</h2>
-                            <p class="mt-8 text-[#0b1056] text-xl "><br/><br/>  <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-[#0b1056]"/>  Sydney 24/7 Care is a registered NDIS provider in Sydney, providing an extensive array of NDIS services and therapies to our participants, including mobile therapeutic services.<br/><br/>
+                            <p class="mt-8 text-[#0b1056] text-xl font-normal "><br/><br/>  <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-[#0b1056]"/>  Sydney 24/7 Care is a registered NDIS provider in Sydney, providing an extensive array of NDIS services and therapies to our participants, including mobile therapeutic services.<br/><br/>
 
 The National Disability Insurance Scheme (NDIS) is a crucial program aimed at helping Australians with disabilities, as well as their families and carers. It grants participants financial aid to access services and resources, empowering them to actively participate in life while promoting equal opportunities for people with disabilities and supporting them in attaining their objectives.<br/><br/>
 

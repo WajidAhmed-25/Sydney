@@ -14,7 +14,7 @@ const HomePage = () => {
   return (
     <div >
      
-        {/* <MainSlider /> */}
+   
        
     <ImageSlider/>
         <hr />

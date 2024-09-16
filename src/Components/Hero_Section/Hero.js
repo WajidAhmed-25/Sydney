@@ -81,9 +81,9 @@ export const HeroHeader = () => {
                     <div class="w-full md:w-1/2 mb-12 md:mb-0">
                         <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight pl-4">Empower. Support. Achieve.</h1>
                         <p class="text-xl mb-8 text-gray-300 pl-4">Dedicated to enhancing the lives of individuals with disabilities through innovative solutions and compassionate support.</p>
-                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pl-4">
-                            <button class="bg-white text-blue-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-100 transition duration-300 text-center">Get Started</button>
-                            <button class="border-2 border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-blue-900 transition duration-300 text-center">Learn More</button>
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8 pl-4">
+                            <a href="/ContactUs" class="bg-white text-blue-900 px-8 py-3 hover:scale-125 hover:border hover:border-white/50 hover:transition-all hover:duration-300 rounded-full font-bold hover:bg-blue-950 hover:text-white  transition duration-300 text-center">Get Started</a>
+                            <a href="/AboutUs" class="border-2 border-white text-white font-bold px-8 py-3 hover:scale-125 hover:border hover:border-white/50 hover:transition-all hover:duration-300 rounded-full hover:bg-white hover:text-blue-900 transition duration-300 text-center">Learn More</a>
                         </div>
                     </div>      
                  <div class="w-full md:w-1/2 md:pl-12">

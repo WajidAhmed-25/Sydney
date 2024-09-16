@@ -16,7 +16,7 @@ const WhatsappChatButton = () => {
             <button
                 title="Contact"
                 onClick={handleClick}
-                class="group lg:inline-flex tracking-wide inline-flex items-center justify-center text-base rounded-xl  bg-[#15194b] text-white px-[13px] py-[9px] font-semibold transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30"
+                class="group lg:inline-flex tracking-wide inline-flex items-center justify-center text-base rounded-xl  bg-[#15194b] text-white px-[13px] py-[9px] font-semibold transition-all duration-200 hover:bg-green-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-green-800/30"
             >
                 Chat on WhatsApp
                 <FaWhatsapp className="mt-0.5 ml-2 -mr-1" size={24} />
