@@ -254,9 +254,7 @@ export default function MyNavbar() {
   <li><a href='/Household_tasks' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Household Tasks</a></li>
   <li><a href='/Social_and_Participating_Community' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Social and Participating Community</a></li>
   <li><a href='Group_Centre_Activities' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Group/Centre Activities</a></li>
-  <li><a href='#' className="block w-full px-4 py-2 text-sm font-medium text-gray-700 transition duration-200 ease-in-out transform rounded-md hover:text-white hover:bg-[#0b1056] hover:scale-105">Group/Centre Activities</a></li>
   
-           
          
             </ul>
           )}
