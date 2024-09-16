@@ -18,22 +18,27 @@ export default function NDISfaq() {
 
     const faqData = [
         {
-            question: "How can I get started?",
-            answer: "Getting started is easy! Sign up for an account, and you'll have access to our platform's features. No credit card required for the initial signup."
+            question: "How can I access support services?",
+            answer: "Accessing our support services is straightforward. You can start by signing up on our platform, where you can then request support services tailored to your needs. Our team will guide you through the process."
         },
         {
-            question: "What is the pricing structure?",
-            answer: "Our pricing structure is flexible. We offer both free and paid plans. You can choose the one that suits your needs and budget."
+            question: "What are the costs associated with your services?",
+            answer: "Our services are designed to be affordable and accessible. We offer various plans, including free options for initial consultations. For ongoing support and specialized services, we have flexible pricing to fit different needs and budgets."
         },
         {
-            question: "What kind of support do you provide?",
-            answer: "We offer comprehensive customer support. You can reach out to our support team through various channels, including email, chat, and a knowledge base."
+            question: "What types of assistance are available?",
+            answer: "We provide a wide range of assistance, including personalized support plans, access to resources, and guidance on navigating services for individuals with disabilities. Our goal is to connect you with the right resources and support."
         },
         {
-            question: "Can I cancel my subscription anytime?",
-            answer: "Yes, you can cancel your subscription at any time without any hidden fees. We believe in providing a hassle-free experience for our users."
+            question: "Can I modify or update my support plan?",
+            answer: "Yes, you can modify or update your support plan at any time. We work with you to ensure that your plan evolves with your needs, providing the flexibility to adapt as necessary."
+        },
+        {
+            question: "How do I provide feedback about your services?",
+            answer: "We value your feedback and strive to improve our services continuously. You can provide feedback through our online form, via email, or during follow-up consultations with our support team."
         }
     ];
+    
 
     return (
         <>
@@ -47,7 +52,7 @@ export default function NDISfaq() {
                     </div>
                     <div className="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
                         {faqData.map((faq, index) => (
-                            <div key={index} className="font-semibold transition-all duration-200 bg-white border-2 rounded-md shadow-lg cursor-pointer border-[#0b1056] hover:text-[#0b1056] hover:bg-[#c8c8cd]">
+                            <div key={index} className="font-semibold transition-all duration-200 bg-white border-2 rounded-md shadow-lg cursor-pointer border-[#0b1056] hover:text-[#0b1056] hover:bg-[#dbdbde]">
                                 <button
                                     type="button"
                                     onClick={() => toggleSection(index)}
@@ -65,7 +70,7 @@ export default function NDISfaq() {
                                     </svg>
                                 </button>
                                 {openSection === index && (
-                                    <div className="px-4 pb-5 sm:px-6 sm:pb-6">
+                                    <div className="px-4 pb-5 sm:px-6 sm:pb-6 text-[#0b1056]">
                                         <p>{faq.answer}</p>
                                     </div>
                                 )}
