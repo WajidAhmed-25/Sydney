@@ -9,7 +9,7 @@ export default function Service_Card8(props){
     const continents = [
   
 
-'The importance of community engagement, social contribution and relationships in maintaining personal wellbeing',
+
 'Self-awareness and self-care',
 'Gaining awareness of personal interests, skillsets and passions and linking these to employment pathways',
 'Emotional awareness and self-regulation',
@@ -66,7 +66,13 @@ export default function Service_Card8(props){
         </div>
   
 
+  
+        <h1 className="mt-4 mb-2 text-lg font-bold md:text-2xl md:mb-12">
+        The importance of community engagement, social contribution and relationships in maintaining personal wellbeing
+        </h1>
 
+
+       
 
 
 
@@ -95,12 +101,29 @@ export default function Service_Card8(props){
 </div>
 
 
+<h1 className="mt-4 mb-2 text-lg font-bold md:text-2xl md:mb-12">
+How to access Innovative Community Participation
+        </h1>
+
+
 
 
         <div className="mb-4 md:mb-8">
           <p className="text-sm leading-relaxed md:text-lg">  
     
-          <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white"/>      Let us be there when you need us most – call our friendly team today!
+          <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white"/> Sydney 24/7 Care is a registered NDIS provider and are able to provide Innovative Community Participation support to portal-managed (NDIS-Managed), plan-managed and self-managed NDIS participants.  The Support Item Number for Innovative Community Participation is 09_008_0116_6_3 and the NDIA categorises it under Capacity Building: Increased Social and Community Participation.
+          </p>
+        </div>
+       
+
+
+
+  
+
+        <div className="mb-4 md:mb-8">
+          <p className="text-sm leading-relaxed md:text-lg">  
+    
+          <FontAwesomeIcon icon={faRightLong}   className="mr-4 text-white"/>   For more information please don’t hesitate to contact  on 0450481989 or sydney247care@gmail.com to discuss your options or complete a referral.
           </p>
         </div>
        

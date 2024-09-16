@@ -27,6 +27,7 @@ import Service_Card10 from './Components/Services/Service_Page/Service10';
 import Service_Card11 from './Components/Services/Service_Page/Service11';
 import Service_Card12 from './Components/Services/Service_Page/Service12';
 import Service_Card13 from './Components/Services/Service_Page/Service13';
+import Service_Card14 from './Components/Services/Service_Page/Service14';
 
 
 
@@ -58,9 +59,12 @@ function App() {
            <Route path="/Innovative_Community_Participation" element={<Service_Card8/>}/>
            <Route path="/Household_tasks" element={<Service_Card9/>}/>
            <Route path="/Development_Life_skills" element={<Service_Card10/>}/>
-           <Route path="/service11" element={<Service_Card11/>}/>
+           <Route path="/Social_and_Participating_Community" element={<Service_Card11/>}/>
            <Route path="/Assist_Access/Maintain_Employ" element={<Service_Card12/>}/>
            <Route path="/Assist_Product_Personal_Care/Safety" element={<Service_Card13/>}/>
+           <Route path="/Group_Centre_Activities" element={<Service_Card14/>}/>
+
+           
   
   
 
