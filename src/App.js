@@ -29,6 +29,7 @@ import Service_Card12 from './Components/Services/Service_Page/Service12';
 import Service_Card13 from './Components/Services/Service_Page/Service13';
 import Service_Card14 from './Components/Services/Service_Page/Service14';
 import Assistance_Btn from './Components/Chat_Button/Assistance';
+import Below_Hero_2 from './Components/Below_Hero_Section/Below_Hero_2';
 
 
 
@@ -56,7 +57,7 @@ function App() {
            <Route path="/Community_participation" element={<Service_Card4/>}/>
            <Route path="/Daily_Tasks_Shared_Living" element={<Service_Card5/>}/>
            <Route path="/Telehealth" element={<Service_Card6/>}/>
-           {/* <Route path="/Daily_Tasks_Shared_Living2" element={<Service_Card7/>}/> */}
+  
            <Route path="/Innovative_Community_Participation" element={<Service_Card8/>}/>
            <Route path="/Household_tasks" element={<Service_Card9/>}/>
            <Route path="/Development_Life_skills" element={<Service_Card10/>}/>
@@ -71,6 +72,8 @@ function App() {
          <Footer />
       </div>
      </Router>
+
+     {/* <Below_Hero_2/> */}
 
 
 

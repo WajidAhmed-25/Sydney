@@ -67,7 +67,7 @@ const cardData = [
 export default function CardsModified() {
   return (
     <div>
-      <div className='flex items-center justify-center w-full pt-12 pb-4'>
+      <div className='flex items-center justify-center w-full pt-20 pb-4'>
         <h1 className="relative text-2xl font-extrabold text-center text-transparent sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl custom-underline bg-gradient-to-br from-gray-500 via-[#0b1056] to-gray-500 bg-clip-text">
           What We Offer
           <span className="absolute left-1/2 transform -translate-x-1/2 -bottom-2 h-1 w-[100%] mt-4 bg-[#0b1056]"></span>

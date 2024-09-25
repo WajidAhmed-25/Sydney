@@ -9,6 +9,7 @@ import Badge from '../Components/NDIS Badge/ndi_badge';
 import Badge2 from '../Components/NDIS Badge/badge2';
 import MainSlider2 from '../Components/Main_Slider/Main_Slider2';
 import ImageSlider from '../Components/Main_Slider/Main_Slider2';
+import Below_Hero_2 from '../Components/Below_Hero_Section/Below_Hero_2';
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
        
     <ImageSlider/>
         <hr />
+        <Below_Hero_2/>
         <CardsModified />
         <HeroHeader />
         <BelowHeroSection />
