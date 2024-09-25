@@ -42,7 +42,7 @@ function App() {
 
   return (
     <>
-     {/* <Router>
+     <Router>
        <div className="App ">
          <MyNavbar />
          <Routes>
@@ -71,9 +71,9 @@ function App() {
          <Assistance_Btn/>
          <Footer />
       </div>
-     </Router> */}
+     </Router>
 
-     <Below_Hero_2/>
+     {/* <Below_Hero_2/> */}
 
 
 
