@@ -28,10 +28,53 @@ export default function ApplyJob() {
     }));
   };
 
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+  
+    const formDataToSend = new FormData();
+    formDataToSend.append('name', formData.name);
+    formDataToSend.append('phone', formData.phone);
+    formDataToSend.append('email', formData.email);
+    formDataToSend.append('option', formData.option);
+    formDataToSend.append('policeCheck', formData.policeCheck);
+    formDataToSend.append('driversLicence', formData.driversLicence);
+    formDataToSend.append('experience', formData.experience);
+    formDataToSend.append('resume', formData.resume);
+  
+    fetch('http://localhost:8000/api/employment-request', {
+      method: 'POST',
+      body: formDataToSend,
+      headers: {
+        Accept: 'application/json',
+      },
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        alert('Form submitted successfully');
+
+        setFormData({
+          name: '',
+          phone: '',
+          email: '',
+          option: '',
+          policeCheck: 'no',
+          driversLicence: 'no',
+          experience: 'no',
+          resume: null,
+        });
+
+     
+        document.getElementById('resume').value = ''; 
+       
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
   };
+  
 
   const handleReset = () => {
     setFormData({
@@ -93,9 +136,9 @@ export default function ApplyJob() {
                 onChange={handleChange}
               >
                 <option>Select Option</option>
-                <option>Option 1</option>
-                <option>Option 2</option>
-                <option>Option 3</option>
+                <option value="Freshers">Freshers</option>
+                <option value="Intermediate"> Intermediate</option>
+                <option value="Senior">Senior</option>
               </select>
               <label className="block mt-6 mb-2 font-bold text-white">
                 ➤ &nbsp;&nbsp;&nbsp; Do you have a current Police Check (National Police Certificate) for employment?
