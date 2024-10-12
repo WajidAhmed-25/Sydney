@@ -139,9 +139,9 @@ export default function ContentHeader() {
                       className="w-8 h-8 text-deep-purple-accent-400"
                     />
                   </div>
-                  <h6 className="mb-2 font-semibold leading-5 text-white">NDIS Helpline</h6>
+                  <h6 className="mb-2 font-semibold leading-5 text-white">Enquire Now</h6>
                   <p className="mb-3 text-sm text-white">
-                    Call us at 1300525437 | 0470375331 | 0435170127 for immediate assistance with your NDIS-related queries and support.
+                    Call us at +61 450 481 989 for immediate assistance with your NDIS-related queries and support.
                   </p>
                 </div>
               </div>
@@ -153,7 +153,7 @@ export default function ContentHeader() {
                   </div>
                   <h6 className="mb-2 font-semibold leading-5 text-white">Email Support</h6>
                   <p className="mb-3 text-sm text-white">
-                    For detailed inquiries or document submissions, email us at info@sydneycare.au.
+                    For detailed inquiries or document submissions, email us at sydney247care@gmail.com.
                   </p>
                 </div>
               </div>

@@ -42,8 +42,12 @@ export default function ApplyJob() {
     formDataToSend.append('driversLicence', formData.driversLicence);
     formDataToSend.append('experience', formData.experience);
     formDataToSend.append('resume', formData.resume);
-  
-    fetch('http://localhost:8000/api/employment-request', {
+
+ 
+
+    //http://localhost:8000/api/employment-request
+
+    fetch('https://api.sydney247care.au/api/employment-request', {
       method: 'POST',
       body: formDataToSend,
       headers: {

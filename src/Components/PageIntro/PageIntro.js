@@ -25,7 +25,7 @@ export default function PageIntro(props) {
 
       <div className="w-full  flex flex-col justify-center items-center h-[100px]    sm:h-[120px] md:h-[140px] lg:h-[160px] xl:h-[200px] space-y-0">
         
-      <div className='w-[28%] h-20 -mt-20 border-r-4 border-l-4  border-[#070a37] '> </div>
+      <div className='w-[28%] h-20 -mt-20  '> </div>
 
         <div className="flex items-center px-4 py-2 bg-[#070a37] rounded-md sm:px-6 sm:py-3 md:px-8 md:py-4 lg:px-8 lg:py-2 mt-0">
           <p className="text-xs font-semibold text-white sm:text-sm md:text-lg lg:text-xl xl:text-2xl">Registered</p>

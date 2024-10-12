@@ -18,8 +18,8 @@ const images = [
     title: "Trusted NDIS specialist for disabled support.",
     image: p5,
     buttons: [
-      { text: "ENQUIRE NOW", color: "orange" ,link:"/ContactUs"},
-      { text: "CALL US NOW", color: "green",link:"/AboutUs"  }
+      { text: "CONTACT DETAILS", color: "orange" ,link:"/ContactUs"},
+      { text: "ABOUT US", color: "green",link:"/AboutUs"  }
     ]
   },
   {
@@ -52,7 +52,7 @@ function ImageSlider() {
   };
 
   useEffect(() => {
-    const interval = setInterval(goToNext, 4500); 
+    const interval = setInterval(goToNext, 6500); 
     return () => clearInterval(interval); 
   }, []);
 

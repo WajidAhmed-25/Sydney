@@ -27,7 +27,11 @@ export default function ContactMapForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/contact-us', formData);
+
+
+      const response = await axios.post('https://api.sydney247care.au/api/contact-us', formData);
+
+  //  const response = await axios.post('http://localhost:8000/api/contact-us', formData);
 
       if (response.status === 201 || response.status === 200 ) {
         toast.success('Thank you for contacting Sydney Care 24/7. Your response has been recorded.');
@@ -67,7 +71,7 @@ export default function ContactMapForm() {
                       <input
                         id="name"
                         type="text"
-                        className="w-full px-4 py-2 my-2 bg-white rounded-md outline-none text-black/50 md:w-1/2 md:mr-2 focus:ring-2 focus:ring-blue-600"
+                        className="w-full px-4 py-2 my-2 text-black bg-white rounded-md outline-none md:w-1/2 md:mr-2 focus:ring-2 focus:ring-blue-600"
                         placeholder="Enter First Name here"
                         value={formData.name}
                         onChange={handleChange}
@@ -75,7 +79,7 @@ export default function ContactMapForm() {
                       <input
                         id="lastname"
                         type="text"
-                        className="w-full px-4 py-2 my-2 bg-white rounded-md outline-none text-black/50 md:w-1/2 md:ml-2 focus:ring-2 focus:ring-blue-600"
+                        className="w-full px-4 py-2 my-2 text-black bg-white rounded-md outline-none md:w-1/2 md:ml-2 focus:ring-2 focus:ring-blue-600"
                         placeholder="Enter Last Name here"
                         value={formData.lastname}
                         onChange={handleChange}
@@ -86,7 +90,7 @@ export default function ContactMapForm() {
                       <input
                         id="phone"
                         type="text"
-                        className="w-full px-4 py-2 my-2 bg-white rounded-md outline-none text-black/50 md:w-1/2 md:mr-2 focus:ring-2 focus:ring-blue-600"
+                        className="w-full px-4 py-2 my-2 text-black bg-white rounded-md outline-none md:w-1/2 md:mr-2 focus:ring-2 focus:ring-blue-600"
                         placeholder="Enter Phone Number"
                         value={formData.phone}
                         onChange={handleChange}
@@ -94,7 +98,7 @@ export default function ContactMapForm() {
                       <input
                         id="email"
                         type="email"
-                        className="w-full px-4 py-2 my-2 bg-white rounded-md outline-none text-black/50 md:w-1/2 md:ml-2 focus:ring-2 focus:ring-blue-600"
+                        className="w-full px-4 py-2 my-2 text-black bg-white rounded-md outline-none md:w-1/2 md:ml-2 focus:ring-2 focus:ring-blue-600"
                         placeholder="Enter Email here"
                         value={formData.email}
                         onChange={handleChange}
@@ -105,7 +109,7 @@ export default function ContactMapForm() {
                       id="subject"
                       type="text"
                       placeholder="Enter Subject here"
-                      className="w-full px-4 py-2 my-2 bg-white rounded-md outline-none text-black/50 focus:ring-2 focus:ring-blue-600"
+                      className="w-full px-4 py-2 my-2 text-black bg-white rounded-md outline-none focus:ring-2 focus:ring-blue-600"
                       value={formData.subject}
                       onChange={handleChange}
                     />
@@ -113,7 +117,7 @@ export default function ContactMapForm() {
                       id="message"
                       rows="5"
                       placeholder="Say Something"
-                      className="w-full px-4 py-2 my-2 bg-white rounded-md outline-none text-black/50 focus:ring-2 focus:ring-blue-600"
+                      className="w-full px-4 py-2 my-2 text-black bg-white rounded-md outline-none focus:ring-2 focus:ring-blue-600"
                       value={formData.message}
                       onChange={handleChange}
                     ></textarea>
