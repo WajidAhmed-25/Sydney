@@ -310,12 +310,12 @@ export default function MyNavbar() {
 			<div onMouseLeave={handleMouseLeave}>
 				{/* Desktop View */}
 				<nav className="fixed bg-white border-b-4  border-[#0b1056]  z-[1000] w-full px-4 py-[2px] flex justify-between items-center">
-					<div className="h-20 ml-4 w-36 rounded-xl logo_div">
+					<div className="h-20 -ml-2 md:ml-4 w-36 rounded-xl logo_div">
 						<img onClick={() => handleNavigation('/')} src={my_logo} alt="Sydney 24/7 Care" className='object-cover w-full h-full'  /> 
 					</div>
 					<div className="lg:hidden">
-						<button className="flex items-center p-3 text-blue-600 navbar-burger" onClick={toggleMobileMenu}>
-							<svg className="block w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+						<button className="flex items-center p-3 text-[#0b1056] navbar-burger" onClick={toggleMobileMenu}>
+							<svg className="block w-6 h-6 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 								<title>Mobile menu</title>
 								<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
 							</svg>

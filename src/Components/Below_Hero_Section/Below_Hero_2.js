@@ -10,7 +10,7 @@ const Below_Hero_2 = () => {
 
 
   return (
-    <div className='overflow-x-hidden'>
+    <div className='overflow-x-hidden overflow-y-hidden'>
 
 
       <div className='flex items-center justify-center w-full p-8 pt-12 pb-4 '>
