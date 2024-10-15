@@ -75,14 +75,6 @@ function App() {
 
      {/* <Below_Hero_2/> */}
 
-
-
-
-
-
-
-
-
     </>
   );
 }
